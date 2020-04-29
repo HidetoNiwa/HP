@@ -1,8 +1,10 @@
 name: github pages
+
 on:
   push:
     branches:
       - master
+
 jobs:
   deploy:
     runs-on: ubuntu-18.04
@@ -15,8 +17,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.69.1'
-          extended: true
+          hugo-version: '0.68.3'
 
       - name: Build
         run: hugo --minify
