@@ -7,8 +7,8 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 60  # Order that this section will appear.
 
-title = "Recent Posts"
-subtitle = ""
+title = "最近の投稿"
+subtitle = "ブログ記事的な投稿です"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
