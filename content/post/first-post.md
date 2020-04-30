@@ -1,12 +1,12 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "First Post"
+title: "投稿方針/サイト移設に関して"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
-categories: []
+tags: [初めての投稿]
+categories: [その他]
 date: 2020-04-30T00:15:41+09:00
 lastmod: 2020-04-30T00:15:41+09:00
 featured: false
@@ -27,3 +27,9 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+
+お久しぶりです！どと～ること、にゎ～んです。
+
+さて、以前より運営していたどと～るブログの方ですが、諸般の事情によりサイトを閉鎖しました。まぁ、その辺の事情等は後々書いていこうかと思っていたりもします。
+
+以前のサイトと同様に技術系に関することを中心に記述していきたいと思います。流し読み程度にご覧いただければと思いますのでよろしくお願いします.。o○
