@@ -1,0 +1,35 @@
+---
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
+title: "hugo/Windowsセットアップ"
+subtitle: ""
+summary: "Windowsにおけるhugoのセットアップの仕方"
+authors: []
+tags: [hugo]
+categories: [hugo]
+date: 2020-04-30T00:15:41+09:00
+lastmod: 2020-04-30T00:15:41+09:00
+featured: false
+draft: true
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
+---
+
+こんにちは！どと～ることにゎ～んです。
+
+さて、今日はhugoのWindowsでの環境構築のやり方について記述していきたいと思います。
+
+# 
