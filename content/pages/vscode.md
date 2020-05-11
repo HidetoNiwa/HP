@@ -33,3 +33,10 @@ projects: []
 Slack風の配色にしてくれるテーマ
 
 URL: https://marketplace.visualstudio.com/items?itemName=felipe-mendes.slack-theme
+
+# 拡張機能
+## TODO Highlight
+URL: https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight
+
+## Todo+
+URL: https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus
