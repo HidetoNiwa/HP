@@ -1,56 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>どと～るブログ</title><link>https://www.hahahahaha-nnn.work/</link><atom:link href="https://www.hahahahaha-nnn.work/index.xml" rel="self" type="application/rss+xml"/><description>どと～るブログ</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Fri, 08 May 2020 12:15:00 +0900</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/images/icon_hu343597b3dfd910a66c256c366b16fc0c_327634_512x512_fill_lanczos_center_2.png</url><title>どと～るブログ</title><link>https://www.hahahahaha-nnn.work/</link></image><item><title>Hugo(Windows)セットアップ</title><link>https://www.hahahahaha-nnn.work/post/hugo_in_windows/</link><pubDate>Fri, 08 May 2020 12:15:00 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/hugo_in_windows/</guid><description>&lt;p>こんにちは！どと～ること、にゎ～んです。さて、今日はhugoのWindowsでの環境構築のやり方について記述していきたいと思います。&lt;/p>
-&lt;h1 id="hugoとは">Hugoとは？&lt;/h1>
-&lt;p>導入として、Hugoの紹介。Hugoとは、「静的ファイルでサイトを作るための支援ツール」です。
-他のWebページ作成ツールとして、Wordpressなどありますがこれらのサイトにはデータベース等が必要となり、保守/管理といった点からも煩雑さが目立ちます。[1]&lt;/p>
-&lt;p>基本的に、HugoのサイトはMarkDown（GitHubとかのReadMe.mdとか）形式で記述することができ、記述の容易性等も挙げることができるかと思います。&lt;/p>
-&lt;h1 id="windows上でのhugoの環境構築">Windows上でのHugoの環境構築&lt;/h1>
-&lt;p>Windows上のhugo環境構築方法として下記の2種類を用いた方法があるそうです。[2]&lt;/p>
-&lt;ul>
-&lt;li>scoop&lt;/li>
-&lt;li>Chocolatey&lt;/li>
-&lt;/ul>
-&lt;p>それぞれ、UbuntuやCentOSで言うところのaptやyumといったパッケージ管理ソフトだそうです。（筆者もよくわかってませんけど、できたからよし！！！）今回ではscoopを用いた方法にしてみたいと思います。&lt;/p>
-&lt;h1 id="下準備scoopの環境構築">（下準備）scoopの環境構築&lt;/h1>
-&lt;p>それでは、下準備としてscoopの環境構築を行っていきたいと思います。
-まず、PowerShellを起動します。&lt;/p>
-&lt;details>&lt;summary>PowerShell管理者権限に関して&lt;/summary>
-サイトによっては、"管理者権限で"って記述も見られますが、Hugoの環境構築を行いたい場合は普通の状態で構いません
-ってか、管理者権限で環境構築すると、管理者として今後走らせないといけない煩雑さが生まれたりもする？*要検証
-&lt;/details>
-そして、続いて下記コマンドを実行します。
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
-iwr -useb get.scoop.sh | iex&lt;/code>&lt;/pre>&lt;/div>
-&lt;p>以上で完了です！！！早いですね、簡単ですね、誰でもできそうですね。&lt;/p>
-&lt;h2 id="確認方法">確認方法&lt;/h2>
-&lt;p>&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">scoop help&lt;/code>&lt;/pre>&lt;/div>
-これで、Scoopの各種コマンドの確認ができます。&lt;/p>
-&lt;h1 id="hugoの環境構築">Hugoの環境構築&lt;/h1>
-&lt;p>それでは、続いてHugoの環境構築を行っていきます。Hugoには、&amp;lsquo;&amp;lsquo;&amp;lsquo;Hugo'&amp;lsquo;&amp;lsquo;と'&amp;lsquo;&amp;lsquo;Hugo Extended'&amp;lsquo;&amp;lsquo;と2種類存在します。&lt;/p>
-&lt;p>特に理由がない場合は、&amp;lsquo;&amp;lsquo;&amp;lsquo;Hugo Extended'&amp;lsquo;&amp;lsquo;のインストールをおすすめします。（上位互換のため&amp;hellip;）一部のテーマは、&amp;lsquo;&amp;lsquo;&amp;lsquo;Hugo Extended'&amp;lsquo;&amp;lsquo;でないとコンパイルできないときがあります。&lt;/p>
-&lt;p>インストールには下記のコマンドをPowerShellで実行すれば大丈夫です。[3]&lt;/p>
-&lt;h2 id="hugo-extended">Hugo Extended&lt;/h2>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">scoop install hugo-extended&lt;/code>&lt;/pre>&lt;/div>
-&lt;h2 id="hugo">Hugo&lt;/h2>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">scoop install hugo-extended&lt;/code>&lt;/pre>&lt;/div>
-&lt;h1 id="最後に">最後に&lt;/h1>
-&lt;p>以上で、HugoのWindows上に環境構築する方法はおしまいです！これであなたも静的な安定したWebページライフを！&lt;/p>
-&lt;h1 id="参考">参考&lt;/h1>
-&lt;ol>
-&lt;li>&lt;a href="https://knowledge.sakura.ad.jp/22908/">https://knowledge.sakura.ad.jp/22908/&lt;/a>
-&lt;ul>
-&lt;li>Hugoに関する紹介に使用させていただきました。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="https://qiita.com/Dooteeen/items/12dc8fb14042888113d0">https://qiita.com/Dooteeen/items/12dc8fb14042888113d0&lt;/a>
-&lt;ul>
-&lt;li>Scoopのインストール方法を参考にさせて頂きました。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="https://gohugo.io/getting-started/installing/">https://gohugo.io/getting-started/installing/&lt;/a>
-&lt;ul>
-&lt;li>hugo公式ドキュメント、windowsでの環境構築のお話が書かれている&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol></description></item><item><title>投稿方針/サイト移設に関して</title><link>https://www.hahahahaha-nnn.work/post/first-post/</link><pubDate>Thu, 30 Apr 2020 00:15:41 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/first-post/</guid><description>&lt;p>お久しぶりです！どと～ること、にゎ～んです。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>どと～るブログ</title><link>https://www.hahahahaha-nnn.work/</link><atom:link href="https://www.hahahahaha-nnn.work/index.xml" rel="self" type="application/rss+xml"/><description>どと～るブログ</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Sun, 10 May 2020 15:00:37 +0900</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/img/logo.jpg</url><title>どと～るブログ</title><link>https://www.hahahahaha-nnn.work/</link></image><item><title>VScode</title><link>https://www.hahahahaha-nnn.work/pages/vscode/</link><pubDate>Sun, 10 May 2020 15:00:37 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/pages/vscode/</guid><description>&lt;p>本ページでは、VScodeで好きなテーマ/拡張機能に関してメモしていきます。&lt;/p>
+&lt;h1 id="テーマ">テーマ&lt;/h1>
+&lt;h2 id="slack-theme">Slack Theme&lt;/h2>
+&lt;p>Slack風の配色にしてくれるテーマ&lt;/p>
+&lt;p>URL: &lt;a href="https://marketplace.visualstudio.com/items?itemName=felipe-mendes.slack-theme">https://marketplace.visualstudio.com/items?itemName=felipe-mendes.slack-theme&lt;/a>&lt;/p>
+&lt;h1 id="拡張機能">拡張機能&lt;/h1>
+&lt;h2 id="todo-highlight">TODO Highlight&lt;/h2>
+&lt;p>URL: &lt;a href="https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight">https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight&lt;/a>&lt;/p>
+&lt;h2 id="todo">Todo+&lt;/h2>
+&lt;p>URL: &lt;a href="https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus">https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus&lt;/a>&lt;/p></description></item><item><title>Hugoでの投稿の仕方</title><link>https://www.hahahahaha-nnn.work/post/how_to_hugo_post/</link><pubDate>Sat, 09 May 2020 23:27:50 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/how_to_hugo_post/</guid><description>&lt;h1 id="はじめに">はじめに&lt;/h1>
+&lt;p>前回の投稿でWindows上での&lt;/p>
+&lt;h1 id="hugoプロジェクトの作成">Hugoプロジェクトの作成&lt;/h1>
+&lt;p>PowerShell、Terminalなど使用OSにおけるコマンドコンソールを開き、プロジェクトを作成したいディレクトリにcdやmkdirを使用して移動する。&lt;/p></description></item><item><title>投稿方針/サイト移設に関して</title><link>https://www.hahahahaha-nnn.work/post/first-post/</link><pubDate>Thu, 30 Apr 2020 00:15:41 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/first-post/</guid><description>&lt;p>お久しぶりです！どと～ること、にゎ～んです。&lt;/p>
 &lt;p>さて、以前より運営していたどと～るブログの方ですが、諸般の事情によりサイトを閉鎖しました。まぁ、その辺の事情等は後々書いていこうかと思っていたりもします。&lt;/p>
 &lt;p>以前のサイトと同様に技術系に関することを中心に記述していきたいと思います。流し読み程度にご覧いただければと思いますのでよろしくお願いします.。o○&lt;/p></description></item></channel></rss>
