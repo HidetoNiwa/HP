@@ -34,6 +34,8 @@ Slack風の配色にしてくれるテーマ
 
 URL: https://marketplace.visualstudio.com/items?itemName=felipe-mendes.slack-theme
 
+{{< figure src="/img/pages/vscode/slack_theme.JPG" title="実際に使用している様子">}}
+
 # 拡張機能
 ## TODO Highlight
 URL: https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight
