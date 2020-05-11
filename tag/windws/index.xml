@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WIndws | どと～るブログ</title><link>https://www.hahahahaha-nnn.work/tag/windws/</link><atom:link href="https://www.hahahahaha-nnn.work/tag/windws/index.xml" rel="self" type="application/rss+xml"/><description>WIndws</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Tue, 12 May 2020 00:00:17 +0900</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/img/logo.jpg</url><title>WIndws</title><link>https://www.hahahahaha-nnn.work/tag/windws/</link></image><item><title>BroadFiler</title><link>https://www.hahahahaha-nnn.work/post/broadfiler/</link><pubDate>Tue, 12 May 2020 00:00:17 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/broadfiler/</guid><description>&lt;h1 id="はじめに">はじめに&lt;/h1>
+&lt;p>こんにちは！どと～ることにゎ～んです。さて、皆さんはWindowsを日ごろ使用しているかと思います。（Macユーザ/Ubuntu(Linux)ユーザもいらっしゃるかと思いますが、本記事はWindowsユーザ向け記事です&amp;hellip;）&lt;/p>
+&lt;p>しかし、Windowsのデフォルトのファイルソフト（ファイラー）である、Windows Explorer ですが、作業を進めていくうちにWindow数が多くなっていき、&lt;strong>自分がどのフォルダを開いているか分からなくなる&lt;/strong>ことが多々あるかと思います。そこで、今回は「BroadFiler」を用いて&lt;strong>タブ&lt;/strong>、&lt;strong>グループ&lt;/strong>を使ったファイル操作管理を行っていこうと思います。&lt;/p>
+&lt;h1 id="インストールの仕方">インストールの仕方&lt;/h1>
+&lt;h2 id="インストーラーをダウンロード">インストーラーをダウンロード&lt;/h2>
+&lt;p>まず、
+&lt;a href="https://www.vector.co.jp/soft/dl/winnt/util/se490120.html" target="_blank" rel="noopener">ダウンロードサイト&lt;/a>にアクセスし、画面中央にある、ダウンロードページへをクリックします。&lt;/p>
+&lt;p>続いて、&lt;strong>このソフトを今すぐダウンロード&lt;/strong>をクリックします。&lt;/p>
+&lt;p>すると、zip形式でインストーラーをダウンロードできるので、展開します。&lt;/p>
+&lt;figure id="figure-zipファイルを展開した結果">
+&lt;a data-fancybox="" href="https://www.hahahahaha-nnn.work/img/post/BroadFiler/zip.JPG" data-caption="zipファイルを展開した結果">
+&lt;img src="https://www.hahahahaha-nnn.work/img/post/BroadFiler/zip.JPG" alt="" >
+&lt;/a>
+&lt;figcaption>
+zipファイルを展開した結果
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="インストーラーを実行">インストーラーを実行&lt;/h2>
+&lt;p>展開した結果、様々なファイルがありますが&lt;strong>steup.exe&lt;/strong>を実行するだけで大丈夫です。（他の解凍ソフトはうまくセットアップできなかった時のものらしい）&lt;/p>
+&lt;p>setup.exeを実行したら、「次へ」「同意する」を押していくとセットアップできます。
+&lt;figure id="figure-インストール完了した結果">
+&lt;a data-fancybox="" href="https://www.hahahahaha-nnn.work/img/post/BroadFiler/end-install.JPG" data-caption="インストール完了した結果">
+&lt;img src="https://www.hahahahaha-nnn.work/img/post/BroadFiler/end-install.JPG" alt="" >
+&lt;/a>
+&lt;figcaption>
+インストール完了した結果
+&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;h1 id="では実際に実行してみましょう">では、実際に実行してみましょう&lt;/h1>
+&lt;p>それでは、実際に実行してみたいと思います。下記画像のようなアイコンが存在すると思うので実行してみます。
+なお、ここで注意してほしいのは、右クリックして&lt;strong>管理者として実行&lt;/strong>することです。&lt;/p>
+&lt;figure id="figure-アイコン">
+&lt;a data-fancybox="" href="https://www.hahahahaha-nnn.work/img/post/BroadFiler/ico.png" data-caption="アイコン">
+&lt;img src="https://www.hahahahaha-nnn.work/img/post/BroadFiler/ico.png" alt="" >
+&lt;/a>
+&lt;figcaption>
+アイコン
+&lt;/figcaption>
+&lt;/figure>
+&lt;h1 id="感想">感想&lt;/h1>
+&lt;p>Windwos Explorerにはない、&lt;strong>タブ機能&lt;/strong>、&lt;strong>グループ機能&lt;/strong>がありその辺を欲してる人にとってはとてもありがたいソフトになってるかと思います。&lt;/p>
+&lt;figure id="figure-実行した結果">
+&lt;a data-fancybox="" href="https://www.hahahahaha-nnn.work/img/post/BroadFiler/show.JPG" data-caption="実行した結果">
+&lt;img src="https://www.hahahahaha-nnn.work/img/post/BroadFiler/show.JPG" alt="" >
+&lt;/a>
+&lt;figcaption>
+実行した結果
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>そういえば、だいぶ以前にWindows Explorerにタブ機能が実装されるという話があったのですけどどうなったんですかね&amp;hellip;&lt;/p></description></item></channel></rss>

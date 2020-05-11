@@ -3,6 +3,14 @@
 &lt;h2 id="slack-theme">Slack Theme&lt;/h2>
 &lt;p>Slack風の配色にしてくれるテーマ&lt;/p>
 &lt;p>URL: &lt;a href="https://marketplace.visualstudio.com/items?itemName=felipe-mendes.slack-theme">https://marketplace.visualstudio.com/items?itemName=felipe-mendes.slack-theme&lt;/a>&lt;/p>
+&lt;figure id="figure-実際に使用している様子">
+&lt;a data-fancybox="" href="https://www.hahahahaha-nnn.work/img/pages/vscode/slack_theme.JPG" data-caption="実際に使用している様子">
+&lt;img src="https://www.hahahahaha-nnn.work/img/pages/vscode/slack_theme.JPG" alt="" >
+&lt;/a>
+&lt;figcaption>
+実際に使用している様子
+&lt;/figcaption>
+&lt;/figure>
 &lt;h1 id="拡張機能">拡張機能&lt;/h1>
 &lt;h2 id="todo-highlight">TODO Highlight&lt;/h2>
 &lt;p>URL: &lt;a href="https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight">https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight&lt;/a>&lt;/p>
