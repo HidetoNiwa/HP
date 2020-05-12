@@ -10,7 +10,7 @@ categories: []
 date: 2020-05-09T23:27:50+09:00
 lastmod: 2020-05-09T23:27:50+09:00
 featured: false
-draft: true
+draft: false
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -27,6 +27,9 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+こんにちは、どと～ることにゎ～んです。さて、今回はHugoの
+
+｛{< blogcard url="https://github.com/yuzuafro/yuzuafrolog" >}}
 # はじめに
 前回の投稿でWindows上での
 
