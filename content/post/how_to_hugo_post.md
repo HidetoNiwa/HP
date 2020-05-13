@@ -3,7 +3,7 @@
 
 title: "Hugoでの投稿の仕方"
 subtitle: ""
-summary: ""
+summary: "Hugoプロジェクトの作成方法&静的なサイトの生成方法"
 authors: []
 tags: []
 categories: []
@@ -27,11 +27,14 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-こんにちは、どと～ることにゎ～んです。さて、今回はHugoの
-
-｛{< blogcard url="https://github.com/yuzuafro/yuzuafrolog" >}}
 # はじめに
-前回の投稿でWindows上での
+こんにちは、どと～ることにゎ～んです。さて以前、HugoをWindows上で環境構築する方法を示しました。今回はHugoを使ってプロジェクトを作成する方法を示したいと思います。
 
 # Hugoプロジェクトの作成
-PowerShell、Terminalなど使用OSにおけるコマンドコンソールを開き、プロジェクトを作成したいディレクトリにcdやmkdirを使用して移動する。
+PowerShell、Terminalなど使用OSにおけるコマンドコンソールを開き、プロジェクトを作成したいディレクトリにcdやmkdirを使用して移動します。
+
+# 静的なページ生成
+
+以上で、htmlの生成まで出来たのでapache2やnginxを使ってサーバ上にファイルを置いて閲覧することができるようになったかと思います。
+
+次回(近いうちに…)、Hugoを使ったテンプレートページでの開発のお話を書いていきたいと思います。
