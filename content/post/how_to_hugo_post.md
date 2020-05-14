@@ -33,20 +33,78 @@ projects: []
 
 ## Hugoプロジェクトの作成
 
-PowerShell、Terminalなど使用OSにおけるコマンドコンソールを開き、プロジェクトを作成したいディレクトリにcdやmkdirを使用して移動します。
-移動した先で、
-{{< highlight Shell "linenos=false,hl_lines=8 15-17">}}
+PowerShell、Terminalなど使用OSにおけるコマンドコンソールを開き、プロジェクトを作成したいディレクトリにcdやmkdirを使用して移動します。移動した先で、
+{{< highlight Shell "linenos=false">}}
 hugo new site test
 {{< /highlight >}}
-と実行します。すると、そのディレクトリに、**test**といったフォルダが作成されます。続いて、
+と実行します。すると、そのディレクトリに、**test**といったフォルダが作成されます。その中身をtreeコマンドを用いて確認すると、
+{{< highlight Shell "linenos=false">}}
+test
+├─archetypes
+├─content
+├─data
+├─layouts
+├─resources
+│  └─_gen
+│      ├─assets
+│      └─images
+├─static
+└─themes
+{{< /highlight >}}
+といった階層になっているのが確認できます。
 
-{{< highlight Shell "linenos=false,hl_lines=8 15-17">}}
+## テーマ導入
+
+これでプロジェクトは完成しましたが、これではサイトとして表示されないので、テーマを導入していきたいと思います。ここでは、cupperといったシンプルな
+{{< highlight Shell "linenos=false">}}
+cd test/themes
+{{< /highlight >}}
+とthemesディレクトリに移動します。
+{{< highlight Shell "linenos=false">}}
+git clone https://github.com/zwbetz-gh/cupper-hugo-theme.git
+{{< /highlight >}}
+として、
+
+## 新しいページ生成
+
+それでは、新しいページを生成していきたいと思います。
+
+{{< highlight Shell "linenos=false">}}
 cd test
 {{< /highlight >}}
 とtestディレクトリに移動し、
-{{< highlight Shell "linenos=false,hl_lines=8 15-17">}}
+{{< highlight Shell "linenos=false">}}
+hugo new post/test.md
+{{< /highlight >}}
+
+と入力します。すると、**/test/content/post/** に **test.md**といったファイルが生成されます。このファイルを開くと、
+
+{{< highlight markdown  "linenos=false">}}
+---
+title: "Test"
+date: 2020-05-15T00:32:24+09:00
+draft: true
+---
+
+{{< /highlight >}}
+となっています。この下に、下記のように入力してみます。
+{{< highlight markdown  "linenos=false">}}
+---
+title: "Test"
+date: 2020-05-15T00:32:24+09:00
+draft: true
+---
+
+## Test
+
+hogehoge
+
+{{< /highlight >}}
+そして、下記のコマンドを入力します。
+{{< highlight Shell "linenos=false">}}
 hugo server
 {{< /highlight >}}
+そして、[http://localhost:1313/](http://localhost:1313/) にアクセスします。
 
 ## 静的なページ生成
 
