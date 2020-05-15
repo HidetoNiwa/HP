@@ -4,7 +4,7 @@
 title: "BroadFiler"
 subtitle: ""
 summary: "タブ機能付きファイラー（BroadFiler）のインストールと使ってみた、ちょこっとの感想"
-authors: []
+authors: [HidetoNiwa]
 tags: [WIndws,ファイラー,BroadFiler]
 categories: [Windows,ファイラー,BroadFiler]
 date: 2020-05-12T00:00:17+09:00

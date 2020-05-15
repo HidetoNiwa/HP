@@ -2,9 +2,9 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "投稿方針/サイト移設に関して"
-subtitle: ""
-summary: ""
-authors: []
+subtitle: "はじめての投稿"
+summary: "はじめての投稿"
+authors: [HidetoNiwa]
 tags: [初めての投稿]
 categories: [その他]
 date: 2020-04-30T00:15:41+09:00

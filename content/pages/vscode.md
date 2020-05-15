@@ -28,17 +28,40 @@ image:
 projects: []
 ---
 本ページでは、VScodeで好きなテーマ/拡張機能に関してメモしていきます。
-# テーマ
-## Slack Theme
+
+## テーマ
+
+### Slack Theme
+
 Slack風の配色にしてくれるテーマ
 
-URL: https://marketplace.visualstudio.com/items?itemName=felipe-mendes.slack-theme
+URL: <https://marketplace.visualstudio.com/items?itemName=felipe-mendes.slack-theme>
 
 {{< figure src="/img/pages/vscode/slack_theme.JPG" title="実際に使用している様子">}}
 
-# 拡張機能
-## TODO Highlight
-URL: https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight
+## 拡張機能
 
-## Todo+
-URL: https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus
+### Japanese Language Pack for Visual Studio Code
+
+言わずと知れた、Visual Studio日本語化拡張機能
+これを入れることにより、設定画面とかが基本的に日本語となる
+
+URL:<https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja>
+
+### TODO Highlight
+
+TODO: と記述した部分にをハイライトしてくれる拡張機能
+
+URL: <https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight>
+
+### Todo+
+
+コメントアウトでTODO:と書いた部分をリストアップしてくれる拡張機能
+
+URL: <https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus>
+
+### Markdown All in One
+
+MarkDownで記述した時、補完を自動で行ってくれるもの
+
+URL:<https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one>
