@@ -4,7 +4,7 @@
 title: "Hugo(Windows)セットアップ"
 subtitle: ""
 summary: "Windowsにおけるhugoのセットアップの仕方"
-authors: []
+authors: [HidetoNiwa]
 tags: [Hugo,Windows]
 categories: [Hugo,Windows]
 date: 2020-05-08T12:15:00+09:00
