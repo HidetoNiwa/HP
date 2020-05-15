@@ -1,4 +1,90 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>投稿一覧 | どと～るブログ</title><link>https://www.hahahahaha-nnn.work/post/</link><atom:link href="https://www.hahahahaha-nnn.work/post/index.xml" rel="self" type="application/rss+xml"/><description>投稿一覧</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Tue, 12 May 2020 00:00:17 +0900</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/img/logo.jpg</url><title>投稿一覧</title><link>https://www.hahahahaha-nnn.work/post/</link></image><item><title>BroadFiler</title><link>https://www.hahahahaha-nnn.work/post/broadfiler/</link><pubDate>Tue, 12 May 2020 00:00:17 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/broadfiler/</guid><description>&lt;h1 id="はじめに">はじめに&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>投稿一覧 | どと～るブログ</title><link>https://www.hahahahaha-nnn.work/post/</link><atom:link href="https://www.hahahahaha-nnn.work/post/index.xml" rel="self" type="application/rss+xml"/><description>投稿一覧</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Fri, 15 May 2020 00:27:50 +0900</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/img/logo.jpg</url><title>投稿一覧</title><link>https://www.hahahahaha-nnn.work/post/</link></image><item><title>Hugoでの投稿の仕方</title><link>https://www.hahahahaha-nnn.work/post/how_to_hugo_post/</link><pubDate>Fri, 15 May 2020 00:27:50 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/how_to_hugo_post/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>こんにちは、どと～ることにゎ～んです。さて以前、HugoをWindows上で環境構築する方法を示しました。今回はHugoを使ってプロジェクトを作成する方法を示したいと思います。&lt;/p>
+&lt;h2 id="hugoプロジェクトの作成">Hugoプロジェクトの作成&lt;/h2>
+&lt;p>PowerShell、Terminalなど使用OSにおけるコマンドコンソール（以下、コマンドライン）を開き、プロジェクトを作成したいディレクトリにcdやmkdirを使用して移動します。移動した先で、
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">hugo new site test&lt;/code>&lt;/pre>&lt;/div>
+と実行します。すると、そのディレクトリに、&lt;strong>test&lt;/strong>といったフォルダが作成されます。その中身をtreeコマンドを用いて確認すると、
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">test
+├─archetypes
+├─content
+├─data
+├─layouts
+├─resources
+│ └─_gen
+│ ├─assets
+│ └─images
+├─static
+└─themes&lt;/code>&lt;/pre>&lt;/div>
+といった階層になっているのが確認できます。&lt;/p>
+&lt;h2 id="テーマ導入">テーマ導入&lt;/h2>
+&lt;p>これでプロジェクトは完成しましたが、これではサイトとして表示されないので、テーマを導入していきたいと思います。ここでは、cupperといったシンプルなテーマを使用していきます。コマンドラインで、
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">cd test/themes&lt;/code>&lt;/pre>&lt;/div>
+とthemesディレクトリに移動します。
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">git clone https://github.com/zwbetz-gh/cupper-hugo-theme.git&lt;/code>&lt;/pre>&lt;/div>
+として、git上から拾ってきます。&lt;/p>
+&lt;h2 id="設定ファイル編集">設定ファイル編集&lt;/h2>
+&lt;p>先ほど、git clone してきたテーマを利用するために、設定ファイルの記述を行います。設定ファイルは、test/config.tomlです。これを開くと、
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">baseURL &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;http://example.org/&amp;#34;&lt;/span>
+languageCode &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;en-us&amp;#34;&lt;/span>
+title &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;My New Hugo Site&amp;#34;&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+となっています。これを、
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">baseURL &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;http://localhost:1313/&amp;#34;&lt;/span>
+languageCode &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;jp&amp;#34;&lt;/span>
+title &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;My New Hugo Site&amp;#34;&lt;/span>
+theme &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;cupper-hugo-theme&amp;#34;&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+と、変更します。それぞれの設定項目は以下のようです。&lt;/p>
+&lt;ul>
+&lt;li>baseURL：サイトのURL（今回の場合は、ローカル環境での動作環境を行うため上記設定）&lt;/li>
+&lt;li>languageCode：デフォルト言語&lt;/li>
+&lt;li>title：サイトタイトル&lt;/li>
+&lt;li>theme：使用するテーマ名（/themese/ディレクトリに存在するフォルダ名）&lt;/li>
+&lt;/ul>
+&lt;h2 id="新しいページ生成">新しいページ生成&lt;/h2>
+&lt;p>さて、使用するテーマまで設定することができたので、新しいページを生成していきたいと思います。
+コマンドラインで、
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">cd test&lt;/code>&lt;/pre>&lt;/div>
+とtestディレクトリに移動し、
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">hugo new test.md&lt;/code>&lt;/pre>&lt;/div>&lt;/p>
+&lt;p>と入力します。すると、&lt;strong>/test/content/&lt;/strong> に &lt;strong>test.md&lt;/strong>といったファイルが生成されます。このファイルを開くと、&lt;/p>
+&lt;p>&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-markdown" data-lang="markdown">---
+title: &amp;#34;Test&amp;#34;
+date: 2020-05-15T00:32:24+09:00
+draft: true
+---&lt;/code>&lt;/pre>&lt;/div>
+となっています。この下に、下記のように入力してみます。
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-markdown" data-lang="markdown">---
+title: &amp;#34;Test&amp;#34;
+date: 2020-05-15T00:32:24+09:00
+draft: false
+---
+&lt;span style="color:#75715e">## これはテストです
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>
+ページ中のコンテンツはこの様に表示されます。&lt;/code>&lt;/pre>&lt;/div>
+保存したのち、コマンドラインに下記のコマンドを入力します。
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">hugo server&lt;/code>&lt;/pre>&lt;/div>
+そして、
+&lt;a href="http://localhost:1313/test/" target="_blank" rel="noopener">http://localhost:1313/test/&lt;/a> にアクセスします。すると、下記画像のように投稿が反映されたことが分かります！
+&lt;figure id="figure-アクセスした様子">
+&lt;a data-fancybox="" href="https://www.hahahahaha-nnn.work/img/post/hugo/hugo-testPage.JPG" data-caption="アクセスした様子">
+&lt;img src="https://www.hahahahaha-nnn.work/img/post/hugo/hugo-testPage.JPG" alt="" >
+&lt;/a>
+&lt;figcaption>
+アクセスした様子
+&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="静的なページ生成">静的なページ生成&lt;/h2>
+&lt;p>先述の部分で、ローカル環境での確認ができたので続いて、Web上に公開するためにhtmlやcssを生成する方法を記述していきます。コマンドラインで/test/ディレクトリ上にて、
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">hugo&lt;/code>&lt;/pre>&lt;/div>
+と、入力します。すると&amp;hellip; &lt;strong>/test/public/&lt;/strong> といったディレクトリが生成されます。この中に、&lt;strong>index.html&lt;/strong> や &lt;strong>/test/index.html&lt;/strong>(先ほど示したtestページ)が生成されました！&lt;/p>
+&lt;p>以上で、htmlの生成まで出来たのでapache2やnginxを使ってサーバ上にファイルを置いて閲覧することができるようになったかと思います。&lt;/p>
+&lt;h2 id="最後に">最後に&lt;/h2>
+&lt;p>次回(近いうちに…)、Hugoを使ったテンプレートページでの開発のお話を書いていきたいと思います。&lt;/p>
+&lt;h2 id="参考">参考&lt;/h2>
+&lt;ol>
+&lt;li>Hugoでのテーマ追加方法：
+&lt;a href="https://qiita.com/yakimeron/items/42d537374abde5517267" target="_blank" rel="noopener">https://qiita.com/yakimeron/items/42d537374abde5517267&lt;/a>&lt;/li>
+&lt;/ol></description></item><item><title>BroadFiler</title><link>https://www.hahahahaha-nnn.work/post/broadfiler/</link><pubDate>Tue, 12 May 2020 00:00:17 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/broadfiler/</guid><description>&lt;h1 id="はじめに">はじめに&lt;/h1>
 &lt;p>こんにちは！どと～ることにゎ～んです。さて、皆さんはWindowsを日ごろ使用しているかと思います。（Macユーザ/Ubuntu(Linux)ユーザもいらっしゃるかと思いますが、本記事はWindowsユーザ向け記事です&amp;hellip;）&lt;/p>
 &lt;p>しかし、Windowsのデフォルトのファイルソフト（ファイラー）である、Windows Explorer ですが、作業を進めていくうちにWindow数が多くなっていき、&lt;strong>自分がどのフォルダを開いているか分からなくなる&lt;/strong>ことが多々あるかと思います。そこで、今回は「BroadFiler」を用いて&lt;strong>タブ&lt;/strong>、&lt;strong>グループ&lt;/strong>を使ったファイル操作管理を行っていこうと思います。&lt;/p>
 &lt;h1 id="インストールの仕方">インストールの仕方&lt;/h1>
@@ -48,43 +134,43 @@ zipファイルを展開した結果
 実行した結果
 &lt;/figcaption>
 &lt;/figure>
-&lt;p>そういえば、だいぶ以前にWindows Explorerにタブ機能が実装されるという話があったのですけどどうなったんですかね&amp;hellip;&lt;/p></description></item><item><title>Hugo(Windows)セットアップ</title><link>https://www.hahahahaha-nnn.work/post/hugo_in_windows/</link><pubDate>Fri, 08 May 2020 12:15:00 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/hugo_in_windows/</guid><description>&lt;p>こんにちは！どと～ること、にゎ～んです。さて、今日はhugoのWindowsでの環境構築のやり方について記述していきたいと思います。&lt;/p>
-&lt;h1 id="hugoとは">Hugoとは？&lt;/h1>
+&lt;p>そういえば、だいぶ以前にWindows Explorerにタブ機能が実装されるという話があったのですけどどうなったんですかね&amp;hellip;&lt;/p></description></item><item><title>Hugo(Windows)セットアップ</title><link>https://www.hahahahaha-nnn.work/post/hugo_in_windows/</link><pubDate>Fri, 08 May 2020 12:15:00 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/hugo_in_windows/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>こんにちは！どと～ること、にゎ～んです。さて、今日はhugoのWindowsでの環境構築のやり方について記述していきたいと思います。&lt;/p>
+&lt;h2 id="hugoとは">Hugoとは&lt;/h2>
 &lt;p>導入として、Hugoの紹介。Hugoとは、「静的ファイルでサイトを作るための支援ツール」です。
 他のWebページ作成ツールとして、Wordpressなどありますがこれらのサイトにはデータベース等が必要となり、保守/管理といった点からも煩雑さが目立ちます。[1]&lt;/p>
 &lt;p>基本的に、HugoのサイトはMarkDown（GitHubとかのReadMe.mdとか）形式で記述することができ、記述の容易性等も挙げることができるかと思います。&lt;/p>
-&lt;h1 id="windows上でのhugoの環境構築">Windows上でのHugoの環境構築&lt;/h1>
+&lt;h2 id="windows上でのhugoの環境構築">Windows上でのHugoの環境構築&lt;/h2>
 &lt;p>Windows上のhugo環境構築方法として下記の2種類を用いた方法があるそうです。[2]&lt;/p>
 &lt;ul>
 &lt;li>scoop&lt;/li>
 &lt;li>Chocolatey&lt;/li>
 &lt;/ul>
 &lt;p>それぞれ、UbuntuやCentOSで言うところのaptやyumといったパッケージ管理ソフトだそうです。（筆者もよくわかってませんけど、できたからよし！！！）今回ではscoopを用いた方法にしてみたいと思います。&lt;/p>
-&lt;h1 id="下準備scoopの環境構築">（下準備）scoopの環境構築&lt;/h1>
+&lt;h2 id="下準備scoopの環境構築">（下準備）scoopの環境構築&lt;/h2>
 &lt;p>それでは、下準備としてscoopの環境構築を行っていきたいと思います。
 まず、PowerShellを起動します。&lt;/p>
-&lt;details>&lt;summary>PowerShell管理者権限に関して&lt;/summary>
-サイトによっては、"管理者権限で"って記述も見られますが、Hugoの環境構築を行いたい場合は普通の状態で構いません
-ってか、管理者権限で環境構築すると、管理者として今後走らせないといけない煩雑さが生まれたりもする？*要検証
-&lt;/details>
-そして、続いて下記コマンドを実行します。
+&lt;p>そして、続いて下記コマンドを実行します。&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 iwr -useb get.scoop.sh | iex&lt;/code>&lt;/pre>&lt;/div>
 &lt;p>以上で完了です！！！早いですね、簡単ですね、誰でもできそうですね。&lt;/p>
-&lt;h2 id="確認方法">確認方法&lt;/h2>
+&lt;h3 id="確認方法">確認方法&lt;/h3>
 &lt;p>&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">scoop help&lt;/code>&lt;/pre>&lt;/div>
 これで、Scoopの各種コマンドの確認ができます。&lt;/p>
-&lt;h1 id="hugoの環境構築">Hugoの環境構築&lt;/h1>
+&lt;h3 id="powershell管理者権限に関して">PowerShell管理者権限に関して&lt;/h3>
+&lt;p>サイトによっては、&amp;ldquo;管理者権限で&amp;quot;って記述も見られますが、Hugoの環境構築を行いたい場合は普通の状態で構いません
+ってか、管理者権限で環境構築すると、管理者として今後走らせないといけない煩雑さが生まれたりもする？*要検証&lt;/p>
+&lt;h2 id="hugoの環境構築">Hugoの環境構築&lt;/h2>
 &lt;p>それでは、続いてHugoの環境構築を行っていきます。Hugoには、&amp;lsquo;&amp;lsquo;&amp;lsquo;Hugo'&amp;lsquo;&amp;lsquo;と'&amp;lsquo;&amp;lsquo;Hugo Extended'&amp;lsquo;&amp;lsquo;と2種類存在します。&lt;/p>
 &lt;p>特に理由がない場合は、&amp;lsquo;&amp;lsquo;&amp;lsquo;Hugo Extended'&amp;lsquo;&amp;lsquo;のインストールをおすすめします。（上位互換のため&amp;hellip;）一部のテーマは、&amp;lsquo;&amp;lsquo;&amp;lsquo;Hugo Extended'&amp;lsquo;&amp;lsquo;でないとコンパイルできないときがあります。&lt;/p>
 &lt;p>インストールには下記のコマンドをPowerShellで実行すれば大丈夫です。[3]&lt;/p>
-&lt;h2 id="hugo-extended">Hugo Extended&lt;/h2>
+&lt;h3 id="hugo-extended">Hugo Extended&lt;/h3>
 &lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">scoop install hugo-extended&lt;/code>&lt;/pre>&lt;/div>
-&lt;h2 id="hugo">Hugo&lt;/h2>
+&lt;h3 id="hugo">Hugo&lt;/h3>
 &lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">scoop install hugo-extended&lt;/code>&lt;/pre>&lt;/div>
-&lt;h1 id="最後に">最後に&lt;/h1>
+&lt;h2 id="最後に">最後に&lt;/h2>
 &lt;p>以上で、HugoのWindows上に環境構築する方法はおしまいです！これであなたも静的な安定したWebページライフを！&lt;/p>
-&lt;h1 id="参考">参考&lt;/h1>
+&lt;h2 id="参考">参考&lt;/h2>
 &lt;ol>
 &lt;li>&lt;a href="https://knowledge.sakura.ad.jp/22908/">https://knowledge.sakura.ad.jp/22908/&lt;/a>
 &lt;ul>

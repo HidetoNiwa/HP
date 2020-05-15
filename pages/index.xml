@@ -1,6 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages | どと～るブログ</title><link>https://www.hahahahaha-nnn.work/pages/</link><atom:link href="https://www.hahahahaha-nnn.work/pages/index.xml" rel="self" type="application/rss+xml"/><description>Pages</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Sun, 10 May 2020 15:00:37 +0900</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/img/logo.jpg</url><title>Pages</title><link>https://www.hahahahaha-nnn.work/pages/</link></image><item><title>VScode</title><link>https://www.hahahahaha-nnn.work/pages/vscode/</link><pubDate>Sun, 10 May 2020 15:00:37 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/pages/vscode/</guid><description>&lt;p>本ページでは、VScodeで好きなテーマ/拡張機能に関してメモしていきます。&lt;/p>
-&lt;h1 id="テーマ">テーマ&lt;/h1>
-&lt;h2 id="slack-theme">Slack Theme&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages | どと～るブログ</title><link>https://www.hahahahaha-nnn.work/pages/</link><atom:link href="https://www.hahahahaha-nnn.work/pages/index.xml" rel="self" type="application/rss+xml"/><description>Pages</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Fri, 15 May 2020 16:40:00 +0900</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/img/logo.jpg</url><title>Pages</title><link>https://www.hahahahaha-nnn.work/pages/</link></image><item><title>Hugo Shortcode</title><link>https://www.hahahahaha-nnn.work/pages/hugo-shortcode/</link><pubDate>Fri, 15 May 2020 16:40:00 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/pages/hugo-shortcode/</guid><description>&lt;p>このページでは、Hugoでよく使われるShortCodeについて書いて行きます。&lt;/p>
+&lt;h2 id="figure">figure&lt;/h2>
+&lt;p>{{&amp;lt; figure src=&amp;rdquo;/img/pages/hugo-shortcode/avatar.jpg&amp;rdquo; title=&amp;quot;画像投稿サンプル&amp;rdquo; width=&amp;quot;150px&amp;rdquo;&amp;gt;}}&lt;/p>
+&lt;h3 id="出力例">出力例&lt;/h3>
+&lt;figure id="figure-画像投稿サンプル">
+&lt;a data-fancybox="" href="https://www.hahahahaha-nnn.work/img/pages/hugo-shortcode/avatar.jpg" data-caption="画像投稿サンプル">
+&lt;img src="https://www.hahahahaha-nnn.work/img/pages/hugo-shortcode/avatar.jpg" alt="" width="150px" >
+&lt;/a>
+&lt;figcaption>
+画像投稿サンプル
+&lt;/figcaption>
+&lt;/figure>
+&lt;h3 id="パラメータ">パラメータ&lt;/h3>
+&lt;h4 id="src">src&lt;/h4>
+&lt;p>/static/以下のファイルパス&lt;/p>
+&lt;h4 id="title">title&lt;/h4>
+&lt;p>画像につけるタイトル&lt;/p>
+&lt;h3 id="width">width&lt;/h3>
+&lt;p>画像幅(px,%で指定可能)&lt;/p>
+&lt;!--## High
+-->
+&lt;h2 id="参考">参考&lt;/h2>
+&lt;ol>
+&lt;li>shortcodeに関する公式リファレンス：
+&lt;a href="https://gohugo.io/content-management/shortcodes/" target="_blank" rel="noopener">https://gohugo.io/content-management/shortcodes/&lt;/a>&lt;/li>
+&lt;/ol></description></item><item><title>VScode</title><link>https://www.hahahahaha-nnn.work/pages/vscode/</link><pubDate>Sun, 10 May 2020 15:00:37 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/pages/vscode/</guid><description>&lt;p>本ページでは、VScodeで好きなテーマ/拡張機能に関してメモしていきます。&lt;/p>
+&lt;h2 id="テーマ">テーマ&lt;/h2>
+&lt;h3 id="slack-theme">Slack Theme&lt;/h3>
 &lt;p>Slack風の配色にしてくれるテーマ&lt;/p>
 &lt;p>URL: &lt;a href="https://marketplace.visualstudio.com/items?itemName=felipe-mendes.slack-theme">https://marketplace.visualstudio.com/items?itemName=felipe-mendes.slack-theme&lt;/a>&lt;/p>
 &lt;figure id="figure-実際に使用している様子">
@@ -11,8 +36,17 @@
 実際に使用している様子
 &lt;/figcaption>
 &lt;/figure>
-&lt;h1 id="拡張機能">拡張機能&lt;/h1>
-&lt;h2 id="todo-highlight">TODO Highlight&lt;/h2>
+&lt;h2 id="拡張機能">拡張機能&lt;/h2>
+&lt;h3 id="japanese-language-pack-for-visual-studio-code">Japanese Language Pack for Visual Studio Code&lt;/h3>
+&lt;p>言わずと知れた、Visual Studio日本語化拡張機能
+これを入れることにより、設定画面とかが基本的に日本語となる&lt;/p>
+&lt;p>URL:&lt;a href="https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja">https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja&lt;/a>&lt;/p>
+&lt;h3 id="todo-highlight">TODO Highlight&lt;/h3>
+&lt;p>TODO: と記述した部分にをハイライトしてくれる拡張機能&lt;/p>
 &lt;p>URL: &lt;a href="https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight">https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight&lt;/a>&lt;/p>
-&lt;h2 id="todo">Todo+&lt;/h2>
-&lt;p>URL: &lt;a href="https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus">https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;h3 id="todo">Todo+&lt;/h3>
+&lt;p>コメントアウトでTODO:と書いた部分をリストアップしてくれる拡張機能&lt;/p>
+&lt;p>URL: &lt;a href="https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus">https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus&lt;/a>&lt;/p>
+&lt;h3 id="markdown-all-in-one">Markdown All in One&lt;/h3>
+&lt;p>MarkDownで記述した時、補完を自動で行ってくれるもの&lt;/p>
+&lt;p>URL:&lt;a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one&lt;/a>&lt;/p></description></item></channel></rss>

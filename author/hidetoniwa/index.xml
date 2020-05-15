@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>どと～るブログ</title><link>https://www.hahahahaha-nnn.work/</link><atom:link href="https://www.hahahahaha-nnn.work/index.xml" rel="self" type="application/rss+xml"/><description>どと～るブログ</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Fri, 15 May 2020 16:40:00 +0900</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/img/logo.jpg</url><title>どと～るブログ</title><link>https://www.hahahahaha-nnn.work/</link></image><item><title>Hugo Shortcode</title><link>https://www.hahahahaha-nnn.work/pages/hugo-shortcode/</link><pubDate>Fri, 15 May 2020 16:40:00 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/pages/hugo-shortcode/</guid><description>&lt;p>このページでは、Hugoでよく使われるShortCodeについて書いて行きます。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HidetoNiwa | どと～るブログ</title><link>https://www.hahahahaha-nnn.work/author/hidetoniwa/</link><atom:link href="https://www.hahahahaha-nnn.work/author/hidetoniwa/index.xml" rel="self" type="application/rss+xml"/><description>HidetoNiwa</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Fri, 15 May 2020 16:40:00 +0900</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/img/logo.jpg</url><title>HidetoNiwa</title><link>https://www.hahahahaha-nnn.work/author/hidetoniwa/</link></image><item><title>Hugo Shortcode</title><link>https://www.hahahahaha-nnn.work/pages/hugo-shortcode/</link><pubDate>Fri, 15 May 2020 16:40:00 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/pages/hugo-shortcode/</guid><description>&lt;p>このページでは、Hugoでよく使われるShortCodeについて書いて行きます。&lt;/p>
 &lt;h2 id="figure">figure&lt;/h2>
 &lt;p>{{&amp;lt; figure src=&amp;rdquo;/img/pages/hugo-shortcode/avatar.jpg&amp;rdquo; title=&amp;quot;画像投稿サンプル&amp;rdquo; width=&amp;quot;150px&amp;rdquo;&amp;gt;}}&lt;/p>
 &lt;h3 id="出力例">出力例&lt;/h3>
@@ -159,33 +159,7 @@ zipファイルを展開した結果
 実行した結果
 &lt;/figcaption>
 &lt;/figure>
-&lt;p>そういえば、だいぶ以前にWindows Explorerにタブ機能が実装されるという話があったのですけどどうなったんですかね&amp;hellip;&lt;/p></description></item><item><title>VScode</title><link>https://www.hahahahaha-nnn.work/pages/vscode/</link><pubDate>Sun, 10 May 2020 15:00:37 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/pages/vscode/</guid><description>&lt;p>本ページでは、VScodeで好きなテーマ/拡張機能に関してメモしていきます。&lt;/p>
-&lt;h2 id="テーマ">テーマ&lt;/h2>
-&lt;h3 id="slack-theme">Slack Theme&lt;/h3>
-&lt;p>Slack風の配色にしてくれるテーマ&lt;/p>
-&lt;p>URL: &lt;a href="https://marketplace.visualstudio.com/items?itemName=felipe-mendes.slack-theme">https://marketplace.visualstudio.com/items?itemName=felipe-mendes.slack-theme&lt;/a>&lt;/p>
-&lt;figure id="figure-実際に使用している様子">
-&lt;a data-fancybox="" href="https://www.hahahahaha-nnn.work/img/pages/vscode/slack_theme.JPG" data-caption="実際に使用している様子">
-&lt;img src="https://www.hahahahaha-nnn.work/img/pages/vscode/slack_theme.JPG" alt="" >
-&lt;/a>
-&lt;figcaption>
-実際に使用している様子
-&lt;/figcaption>
-&lt;/figure>
-&lt;h2 id="拡張機能">拡張機能&lt;/h2>
-&lt;h3 id="japanese-language-pack-for-visual-studio-code">Japanese Language Pack for Visual Studio Code&lt;/h3>
-&lt;p>言わずと知れた、Visual Studio日本語化拡張機能
-これを入れることにより、設定画面とかが基本的に日本語となる&lt;/p>
-&lt;p>URL:&lt;a href="https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja">https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja&lt;/a>&lt;/p>
-&lt;h3 id="todo-highlight">TODO Highlight&lt;/h3>
-&lt;p>TODO: と記述した部分にをハイライトしてくれる拡張機能&lt;/p>
-&lt;p>URL: &lt;a href="https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight">https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight&lt;/a>&lt;/p>
-&lt;h3 id="todo">Todo+&lt;/h3>
-&lt;p>コメントアウトでTODO:と書いた部分をリストアップしてくれる拡張機能&lt;/p>
-&lt;p>URL: &lt;a href="https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus">https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus&lt;/a>&lt;/p>
-&lt;h3 id="markdown-all-in-one">Markdown All in One&lt;/h3>
-&lt;p>MarkDownで記述した時、補完を自動で行ってくれるもの&lt;/p>
-&lt;p>URL:&lt;a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one&lt;/a>&lt;/p></description></item><item><title>Hugo(Windows)セットアップ</title><link>https://www.hahahahaha-nnn.work/post/hugo_in_windows/</link><pubDate>Fri, 08 May 2020 12:15:00 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/hugo_in_windows/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>そういえば、だいぶ以前にWindows Explorerにタブ機能が実装されるという話があったのですけどどうなったんですかね&amp;hellip;&lt;/p></description></item><item><title>Hugo(Windows)セットアップ</title><link>https://www.hahahahaha-nnn.work/post/hugo_in_windows/</link><pubDate>Fri, 08 May 2020 12:15:00 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/hugo_in_windows/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
 &lt;p>こんにちは！どと～ること、にゎ～んです。さて、今日はhugoのWindowsでの環境構築のやり方について記述していきたいと思います。&lt;/p>
 &lt;h2 id="hugoとは">Hugoとは&lt;/h2>
 &lt;p>導入として、Hugoの紹介。Hugoとは、「静的ファイルでサイトを作るための支援ツール」です。
