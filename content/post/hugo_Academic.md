@@ -3,7 +3,7 @@
 
 title: "Hugo_Academic"
 subtitle: ""
-summary: "Hugo Academic テーマを使用したサイトの製作方法"
+summary: "Hugo Academicテーマを使用したサイトの製作方法"
 authors: [HidetoNiwa]
 tags: [Hugo,Academic]
 categories: [Hugo,Academic]
@@ -30,10 +30,13 @@ projects: []
 
 ## はじめに
 
-前回までで、Hugoを用いてサイト
+- [Windows上でのHugoの構築の仕方](https://www.hahahahaha-nnn.work/post/hugo_in_windows/)
+- [Hugoでの投稿の仕方](https://www.hahahahaha-nnn.work/post/how_to_hugo_post/)
+これまでに、Hugoの環境構築の仕方、投稿の仕方と投稿を出してきました。これらをもとに、今回は、HugoのAcademic テーマを用いたサイトの作成に関して記述していきたいと思います。
 
 ## Academic テーマとは
 
+HugoのAcademicテーマとは、数多くあるHugoのテーマの中でも
 実は本サイトでも採用しています。
 
 ## 最後に
