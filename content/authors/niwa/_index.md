@@ -13,7 +13,7 @@ superuser: true
 role: ものづくりが趣味のひと？
 
 # Short bio (displayed in user profile at end of posts)
-bio: 流体研究中/OUXT 回路系
+bio: 流体研究中/OUXT 運営/Scramble 運営
 
 interests:
 - ロボット回路システム
@@ -49,6 +49,16 @@ user_groups:
 - Programers
 ---
 
+NHK学生ロボコンで回路製作をしつつチーム運営を行っていた者
+
+最近は、流体やWebサービス関係のお勉強をしながら、応援をしている立場。
+
+参考：[リンク](https://www.hahahahaha-nnn.work/links/)
+
+## 所属
+
 大阪大学ロボット製作団体Robohan OB（回路班/運営系/鯖管）
 
-OUXT　回路/運営班
+OUXT 回路/運営班
+
+Scramble 運営班
