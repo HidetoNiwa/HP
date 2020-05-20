@@ -1,0 +1,11 @@
+# Font style metadata
+name = "Minimal"
+
+# Optional Google font URL
+google_fonts = "Sawarabi+Mincho"
+
+# Font families
+heading_font = "Sawarabi Mincho"
+body_font = "Sawarabi Mincho"
+nav_font = "Sawarabi Mincho"
+mono_font = "Sawarabi Mincho"
