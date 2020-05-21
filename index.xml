@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>どと～るブログ</title><link>https://www.hahahahaha-nnn.work/</link><atom:link href="https://www.hahahahaha-nnn.work/index.xml" rel="self" type="application/rss+xml"/><description>どと～るブログ</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Fri, 15 May 2020 17:39:04 +0900</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/img/logo.jpg</url><title>どと～るブログ</title><link>https://www.hahahahaha-nnn.work/</link></image><item><title>Links</title><link>https://www.hahahahaha-nnn.work/links/</link><pubDate>Fri, 15 May 2020 17:39:04 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/links/</guid><description>&lt;p>自分が、現在/過去に関連したプロジェクト等のリンク集です。それぞれの活動にご賛同いただけましたらご支援等頂けますと幸いです。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>どと～るブログ</title><link>https://www.hahahahaha-nnn.work/</link><atom:link href="https://www.hahahahaha-nnn.work/index.xml" rel="self" type="application/rss+xml"/><description>どと～るブログ</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Fri, 15 May 2020 17:39:04 +0900</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/img/logo.jpg</url><title>どと～るブログ</title><link>https://www.hahahahaha-nnn.work/</link></image><item><title>Hugo Academicテーマの導入</title><link>https://www.hahahahaha-nnn.work/post/hugo_academic/</link><pubDate>Fri, 22 May 2020 00:29:36 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/hugo_academic/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>こんにちは！どと～ることにゎ～んです。&lt;/p>
+&lt;p>これまでに、Hugoの環境構築の仕方、投稿の仕方と投稿を出してきました。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="https://www.hahahahaha-nnn.work/post/hugo_in_windows/" target="_blank" rel="noopener">Windows上でのHugoの構築の仕方&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.hahahahaha-nnn.work/post/how_to_hugo_post/" target="_blank" rel="noopener">Hugoでの投稿の仕方&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>これらをもとに、今回は、HugoのAcademicテーマの導入に関して記述していきたいと思います。&lt;/p>
+&lt;h2 id="academic-テーマとは">Academic テーマとは&lt;/h2>
+&lt;p>HugoのAcademicテーマとは、数多くあるHugoのテーマの中で最もGitHub上でスターがつけられている（らしい）&lt;/p>
+&lt;p>実は本サイトでも採用しています。ブログと、個人/組織紹介を兼ねたWebサイトに向いています。&lt;/p>
+&lt;h2 id="academicテーマサンプル導入">Academicテーマサンプル導入&lt;/h2>
+&lt;p>それでは、実際にAcademicテーマの導入を進めて行きたいと思います。&lt;/p>
+&lt;p>（以下、Hugo,gitがコマンドラインで使用可能であることを前提に話を進めていきます。）&lt;/p>
+&lt;h3 id="git-clone">git clone&lt;/h3>
+&lt;p>コマンドラインを開き、下記コマンドを入力します。&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">git clone https://github.com/sourcethemes/academic-kickstart.git Site_name&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>これだと、サンプル部分のみgit cloneされAcademicテーマのサブモジュール部分がcloneされないので下記コマンドを順次実行していきます。&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">cd Site_name
+git submodule update --init --recursive&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>そしたら下記コマンドを実行してみます。&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Shell" data-lang="Shell">hugo server&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>ここまで、問題がなければ
+&lt;a href="http://localhost:1313/" target="_blank" rel="noopener">http://localhost:1313/&lt;/a>にアクセスしましょう！すると下記画像のように表示されるかと思います。（大体問題になるのは、git submoduleを導入するあたりです。）&lt;/p>
+&lt;figure id="figure-academicテーマ動作結果">
+&lt;a data-fancybox="" href="https://www.hahahahaha-nnn.work/img/post/hugo/hugo-Academic.JPG" data-caption="Academicテーマ動作結果">
+&lt;img src="https://www.hahahahaha-nnn.work/img/post/hugo/hugo-Academic.JPG" alt="" width="400px" >
+&lt;/a>
+&lt;figcaption>
+Academicテーマ動作結果
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="最後に">最後に&lt;/h2>
+&lt;p>とりあえず、Academicテーマサンプルページの導入方法は以上になります。&lt;/p>
+&lt;p>このサンプルページをもとに、各種設定を行いGitHub Pageseとして公開をしていくのはまた後々のお話&amp;hellip;&lt;/p>
+&lt;p>また、他のHugoテーマと同様にCSSや設定をカスタマイズすることが可能です！（このサイトでは、記事の表示幅、フォントをカスタマイズしています。）&lt;/p>
+&lt;p>気が向いたら、その辺も書いていきましょうかねぇ.。o○&lt;/p>
+&lt;h2 id="参考">参考&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;a href="https://qiita.com/harumaxy/items/58e7e4273c61e7e260b3" target="_blank" rel="noopener">Hugo + Academic テーマを使ったブログの作り方&lt;/a>&lt;/li>
+&lt;/ol></description></item><item><title>Links</title><link>https://www.hahahahaha-nnn.work/links/</link><pubDate>Fri, 15 May 2020 17:39:04 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/links/</guid><description>&lt;p>自分が、現在/過去に関連したプロジェクト等のリンク集です。それぞれの活動にご賛同いただけましたらご支援等頂けますと幸いです。&lt;/p>
 &lt;h2 id="現在所属しているプロジェクト">現在所属しているプロジェクト&lt;/h2>
 &lt;h3 id="ouxt-polaris">OUXT Polaris&lt;/h3>
 &lt;p>
