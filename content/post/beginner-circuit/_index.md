@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Beginner Circuit"
+title: "【ロボコン回路入門】"
 subtitle: ""
 summary: ""
 authors: []
@@ -27,3 +27,5 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+
+シリーズ【ロボコン回路入門】として投稿した記事です。
