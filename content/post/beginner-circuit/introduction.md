@@ -39,7 +39,12 @@ projects: []
 
 - 部品に関して
   - 抵抗器
-  - コンデンサ
+  - コンデンサ/コイル
   - トランジスタ/FET
-  - 
 - マイコンに関して
+  - Digital I/O
+  - ADC/DAC
+  - Timer
+  - PWM
+  - Serial通信
+- 工具/基板など
