@@ -1,4 +1,112 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>投稿一覧 | どと～るブログ</title><link>https://www.hahahahaha-nnn.work/post/</link><atom:link href="https://www.hahahahaha-nnn.work/post/index.xml" rel="self" type="application/rss+xml"/><description>投稿一覧</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Fri, 22 May 2020 00:29:36 +0900</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/img/logo.jpg</url><title>投稿一覧</title><link>https://www.hahahahaha-nnn.work/post/</link></image><item><title>Hugo Academicテーマの導入</title><link>https://www.hahahahaha-nnn.work/post/hugo_academic/</link><pubDate>Fri, 22 May 2020 00:29:36 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/hugo_academic/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>投稿一覧 | どと～るブログ</title><link>https://www.hahahahaha-nnn.work/post/</link><atom:link href="https://www.hahahahaha-nnn.work/post/index.xml" rel="self" type="application/rss+xml"/><description>投稿一覧</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Sun, 27 Sep 2020 02:38:54 +0900</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/img/logo.jpg</url><title>投稿一覧</title><link>https://www.hahahahaha-nnn.work/post/</link></image><item><title>Slackのカスタム絵文字の移行</title><link>https://www.hahahahaha-nnn.work/post/slack-emoji-move/</link><pubDate>Sun, 27 Sep 2020 02:38:54 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/slack-emoji-move/</guid><description>&lt;p>こんにちは、どと～ること、にゎ～んです。NHK学生ロボコンもついに2021のルールが発表されましたね。&lt;/p>
+&lt;p>Slackのワークスペースの移行が行われていたりしてます。&lt;/p>
+&lt;p>そのSlackのワークスペース移行に当たって、「カスタム絵文字」（自分たちで追加したスタンプのこと）の移行が面倒になったりします。
+移行の方法に関して、インターネットの広い海に書かれていたりしますが、Slack apiの仕様が変更になったりして方法が変わっていたので2020/09現在の方法に関して、
+備忘録をかねて記載していきたいと思います。&lt;/p>
+&lt;h2 id="基本環境">基本環境&lt;/h2>
+&lt;p>Windows10(64bit)　2020/09/27現在&lt;/p>
+&lt;p>※MacやLinuxでもNode.jsさえインストールしてしまえば同様だと思います。（未検証）&lt;/p>
+&lt;h2 id="絵文字をslackからエクスポート">絵文字をSlackからエクスポート&lt;/h2>
+&lt;h3 id="nodejsのインストール">Node.jsのインストール&lt;/h3>
+&lt;p>
+&lt;a href="https://nodejs.org/ja/" target="_blank" rel="noopener">Node.js 公式サイト&lt;/a>へアクセス、自分のPCに合うインストーラをダウンロード。（筆者は12.18.4LTSをインストール）&lt;/p>
+&lt;p>インストーラがダウンロード出来たら適当にYesをクリックしていきインストールする。&lt;br>
+（この時、Add PATHにチェックが入っているか確認する。）&lt;/p>
+&lt;h3 id="各種モジュールインストール">各種モジュールインストール&lt;/h3>
+&lt;p>下記コマンドをコマンドプロンプト/PowerShellで実行し、インストールを行う。&lt;/p>
+&lt;pre>&lt;code class="language-bash">npm install slack-node
+npm install request
+npm install fs
+&lt;/code>&lt;/pre>
+&lt;h3 id="slack-api-tokenの準備">Slack API Tokenの準備&lt;/h3>
+&lt;p>
+&lt;a href="https://api.slack.com/" target="_blank" rel="noopener">Slack api&lt;/a>へアクセスし、画面中央の&amp;quot;Start Building&amp;quot;をクリックする。&lt;/p>
+&lt;p>すると、下記画像の様に出てくるので、適当に Slack App 名を決め、インストールするワークスペースを指定し、&amp;ldquo;create app&amp;quot;をクリックする。
+&lt;figure >
+&lt;a data-fancybox="" href="https://www.hahahahaha-nnn.work/img/post/slack/emoji-app.JPG" >
+&lt;img src="https://www.hahahahaha-nnn.work/img/post/slack/emoji-app.JPG" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;p>続いて、Permissionsをクリックする。これによって、Permission管理ができる。
+&lt;figure >
+&lt;a data-fancybox="" href="https://www.hahahahaha-nnn.work/img/post/slack/emoji-app2.JPG" >
+&lt;img src="https://www.hahahahaha-nnn.work/img/post/slack/emoji-app2.JPG" alt="" width="75%" >
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;p>ページ中央部に&amp;quot;Scopes&amp;quot;があるので、&amp;ldquo;Add an OAuth Scope&amp;quot;をクリックし、&amp;ldquo;emoji:read&amp;quot;を追加する。(赤色下線部)&lt;br>
+そして、ページ上部の&amp;quot;Install App to Workspace&amp;quot;をクリックする。
+&lt;figure >
+&lt;a data-fancybox="" href="https://www.hahahahaha-nnn.work/img/post/slack/emoji-app3.JPG" >
+&lt;img src="https://www.hahahahaha-nnn.work/img/post/slack/emoji-app3.JPG" alt="" width="65%" >
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;p>そして、ワークスペース連携の許可を求められるので、&lt;strong>許可&lt;/strong>する。&lt;br>
+すると、&amp;ldquo;Bot User OAuth Access Token&amp;quot;が表示される。このTokenは後々使用するのでCopyしてメモる。
+&lt;figure >
+&lt;a data-fancybox="" href="https://www.hahahahaha-nnn.work/img/post/slack/emoji-app4.JPG" >
+&lt;img src="https://www.hahahahaha-nnn.work/img/post/slack/emoji-app4.JPG" alt="" width="65%" >
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;h3 id="インポートスクリプト作成">インポートスクリプト作成&lt;/h3>
+&lt;p>インポートしたいディレクトリで、&amp;ldquo;app.js&amp;quot;といったファイル名で下記ファイルを作成する。&lt;br>
+また、同じディレクトリに&amp;quot;image&amp;quot;といったディレクトリも作成する。&lt;/p>
+&lt;pre>&lt;code class="language-js">var Slack = require('slack-node');
+var request = require('request');
+var fs = require('fs');
+apiToken = &amp;quot;&amp;lt;API Token&amp;gt;&amp;quot;; // Slack APIトークンを&amp;quot; &amp;quot;内に貼り付け
+slack = new Slack(apiToken);
+slack.api(&amp;quot;emoji.list&amp;quot;, function (err, response) {
+for(key in response.emoji){
+url = response.emoji[key];
+//エイリアスは無視
+if(url.match(/alias/)){
+continue;
+}
+// 取得対象の拡張子
+extention = url.match(/\.[^\.]+$/);
+request
+.get(url)
+.on('response', function (res) {
+})
+.pipe(fs.createWriteStream('image/' + key + extention));
+}
+});
+&lt;/code>&lt;/pre>
+&lt;h3 id="実行">実行&lt;/h3>
+&lt;p>下記コマンドを実行して、カスタム絵文字のダウンロードを行う。&lt;/p>
+&lt;pre>&lt;code class="language-bash">node app.js
+&lt;/code>&lt;/pre>
+&lt;h2 id="絵文字のslackへインポート">絵文字のSlackへインポート&lt;/h2>
+&lt;h3 id="slack-custom-emoji-managerchrome拡張機能-のインストール">Slack Custom Emoji Manager(Chrome拡張機能) のインストール&lt;/h3>
+&lt;p>
+&lt;a href="https://chrome.google.com/webstore/detail/slack-custom-emoji-manage/cgipifjpcbhdppbjjphmgkmmgbeaggpc/related" target="_blank" rel="noopener">Slack Custom Emoji Manager(Chrome拡張機能)&lt;/a>へchrome/edge（最新版）等、chrome拡張機能が使えるブラウザでアクセスし、「chromeに追加」をクリック&lt;/p>
+&lt;p>すると、https://(ワークスペース名).slack.com/customize/emoji へアクセスすると下記画像の様になる。
+&amp;ldquo;ここに追加したい絵文字をドラック＆ドロップ&amp;quot;で投下すると、絵文字の追加が順次行われていく。
+&lt;figure >
+&lt;a data-fancybox="" href="https://www.hahahahaha-nnn.work/img/post/slack/slack-stamp-ext.JPG" >
+&lt;img src="https://www.hahahahaha-nnn.work/img/post/slack/slack-stamp-ext.JPG" alt="" width="65%" >
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="まとめ">まとめ&lt;/h2>
+&lt;p>以上で、Slackのカスタム絵文字の移行は完了です！&lt;/p>
+&lt;p>APIは生物なので、開発の具合やユーザ要望によって仕様変更が起こるのは多々ですよね&amp;hellip;&lt;br>
+今後はどうなっていくのやら🤔&lt;/p>
+&lt;h2 id="参考情報">参考情報&lt;/h2>
+&lt;p>chrome拡張機能を入れると、&amp;ldquo;すべての絵文字をダウンロード&amp;quot;とボタンがあるがダウンロードすることは出来ない。&lt;br>
+（API仕様変更のため&amp;hellip;?，作成者様の
+&lt;a href="https://qiita.com/nabekou29/items/83e11a58724517f66cad#%E3%81%A7%E3%81%8D%E3%81%9F%E3%82%82%E3%81%AE" target="_blank" rel="noopener">Qiita記事&lt;/a>にはできると書かれているのだが&amp;hellip;）&lt;/p>
+&lt;p>下記サイトを参考にさせていただきました。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="https://blog.ef-4.co.jp/slack-%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E7%B5%B5%E6%96%87%E5%AD%97-%E4%B8%80%E6%8B%AC%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%83%BB%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC/" target="_blank" rel="noopener">Slack カスタム絵文字 一括ダウンロード・インストール方法 まとめ&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://qiita.com/nabekou29/items/83e11a58724517f66cad#%E3%81%A7%E3%81%8D%E3%81%9F%E3%82%82%E3%81%AE" target="_blank" rel="noopener">Slackのカスタム絵文字を一括ダウンロード・削除するChrome拡張を作ってみた&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Hugo Academicテーマの導入</title><link>https://www.hahahahaha-nnn.work/post/hugo_academic/</link><pubDate>Fri, 22 May 2020 00:29:36 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/hugo_academic/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
 &lt;p>こんにちは！どと～ることにゎ～んです。&lt;/p>
 &lt;p>これまでに、Hugoの環境構築の仕方、投稿の仕方と投稿を出してきました。&lt;/p>
 &lt;ul>
