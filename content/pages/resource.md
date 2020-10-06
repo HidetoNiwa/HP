@@ -66,6 +66,14 @@ RoboMaster大阪チーム OSAKA TAKOYAKI（現在、解体済み）の活動紹�
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/C3xxcISjAsyL9X" width="592" height="333" frameborder="1" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser15f197/201909162019-osaka-takoyaki" title="20190916大工大技術交流会2019 OSAKA TAKOYAKI" target="_blank">20190916大工大技術交流会2019 OSAKA TAKOYAKI</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser15f197" target="_blank">どと〜る </a></strong> </div>
 
+## エキスポシティハッカソン（Fact-Real）
+
+発表日：2018/09/28
+
+エキスポシティ（大阪・吹田）にて行われました「エキスポシティハッカソン」にて発表させて頂いたスライドです（個人名等は削除させていただきました）
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/quOTXlH3q3OZXK" width="592" height="333" frameborder="1" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser15f197/factreal" title="エキスポシティハッカソン（Fact-Real）" target="_blank">エキスポシティハッカソン（Fact-Real）</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser15f197" target="_blank">どと〜る </a></strong> </div>
+
 ## 「かいろ」せいちょうものがたり
 
 発表日：2018/09/10
