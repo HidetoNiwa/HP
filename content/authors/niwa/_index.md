@@ -53,12 +53,11 @@ NHK学生ロボコンで回路製作をしつつチーム運営を行ってい�
 
 最近は、流体やWebサービス関係のお勉強をしながら、応援をしている立場。
 
-参考：[リンク](https://www.hahahahaha-nnn.work/links/)
+[所属団体 紹介](https://www.hahahahaha-nnn.work/links/)
 
 ## 所属
 
-大阪大学ロボット製作団体Robohan OB（回路班/運営系/鯖管）
-
-OUXT 回路/運営班
-
-Scramble 運営班
+- [大阪大学ロボット製作団体Robohan](https://www.robohan.net/) OB（回路班/運営系/鯖管）
+- [関西春ロボコン](https://xn--tck4d2b0a0029dol2bn0r.com/)運営委員会
+- OUXT 回路/運営班
+- 一般社団法人次世代ロボットエンジニア支援機構（Scramble） <br>運営・広報イベントG イベント係

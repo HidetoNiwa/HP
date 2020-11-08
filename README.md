@@ -10,6 +10,10 @@ Hugo + GitHub Pagesで構成されています。
 
 ## その他
 
+### 参考
+
+GitHub Actions でカスタムドメインの設定を行う方法([参考リンク](https://tech-wafter.net/2020/deploy-custom-domain-github-pages-on-github-actions/))
+
 ### License
 
 Copyright 2017-present [George Cushen](https://georgecushen.com).
