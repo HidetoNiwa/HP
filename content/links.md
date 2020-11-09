@@ -35,6 +35,8 @@ projects: []
 
 ### 関西春ロボコン運営委員会
 
+{{< figure src="https://pbs.twimg.com/profile_images/1219193661285519361/JcLlEmnb_400x400.jpg" class="center">}}
+
 #### 概要
 
 春ロボコン（関西大会）の主催団体
@@ -56,6 +58,8 @@ projects: []
 
 ### OUXT Polaris
 
+{{< figure src="https://www.ouxt.jp/author/ouxt-polaris/avatar_hu334bf1a4a42285b66ba2952f3b2917af_13445_270x270_fill_q90_lanczos_center.jpg" class="center">}}
+
 #### 概要
 
 [Maritime Robotx Challenge](https://www.robotx.org/)へむけて結成された学生主体のロボコンチーム。<br>
@@ -76,6 +80,8 @@ projects: []
 - GitHub：[https://github.com/OUXT-Polaris](https://github.com/OUXT-Polaris)
 
 ### 一般社団法人次世代ロボットエンジニア支援機構（通称：Scramble）
+
+{{< figure src="https://scramble-robot.org/wp-content/uploads/2020/04/webpage_top_logo.png" class="center">}}
 
 #### 概要
 
@@ -100,6 +106,8 @@ projects: []
 ## 過去に所属していたプロジェクト
 
 ### 大阪大学公認ロボット製作団体 Robohan
+
+{{< figure src="https://scontent-nrt1-1.xx.fbcdn.net/v/t31.0-8/413965_142496685900193_445546923_o.jpg?_nc_cat=101&ccb=2&_nc_sid=e3f864&_nc_ohc=NhTV2G4Ibe0AX-81KWG&_nc_ht=scontent-nrt1-1.xx&oh=6af642e8fad45d1664f3ad65fc6d42a0&oe=5FCFE943" class="center">}}
 
 #### 概要
 
