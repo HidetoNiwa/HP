@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sample | どと～るブログ</title><link>https://www.hahahahaha-nnn.work/tag/sample/</link><atom:link href="https://www.hahahahaha-nnn.work/tag/sample/index.xml" rel="self" type="application/rss+xml"/><description>sample</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Mon, 09 Nov 2020 17:52:24 +0900</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/img/logo.jpg</url><title>sample</title><link>https://www.hahahahaha-nnn.work/tag/sample/</link></image><item><title>Sample</title><link>https://www.hahahahaha-nnn.work/sample/</link><pubDate>Mon, 09 Nov 2020 17:52:24 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/sample/</guid><description>&lt;p>サンプル表示ページです。それぞれの記法を参考にしてみてください。
+&lt;a href="https://qiita.com/Minalinsky_1911/items/b684cfabe0f2fde0c67b" target="_blank" rel="noopener">参考リンク&lt;/a>&lt;/p>
+&lt;h2 id="各レベル表示">各レベル表示&lt;/h2>
+&lt;h1 id="h1">h1&lt;/h1>
+&lt;h2 id="h2">h2&lt;/h2>
+&lt;h3 id="h3">h3&lt;/h3>
+&lt;h4 id="h4">h4&lt;/h4>
+&lt;h5 id="h5">h5&lt;/h5>
+&lt;h6 id="h6">h6&lt;/h6>
+&lt;h2 id="リンク">リンク&lt;/h2>
+&lt;p>&lt;a href="https://www.robohan.net/">https://www.robohan.net/&lt;/a>&lt;/p>
+&lt;p>
+&lt;a href="https://www.robohan.net/" target="_blank" rel="noopener">RobohanHP&lt;/a>&lt;/p>
+&lt;h2 id="太字斜体">太字・斜体&lt;/h2>
+&lt;p>&lt;strong>太字&lt;/strong>や&lt;em>斜体&lt;/em>を表示させるとこうなります。&lt;strong>Bold&lt;/strong>や&lt;em>italic&lt;/em>&lt;/p>
+&lt;h2 id="リスト">リスト&lt;/h2>
+&lt;ul>
+&lt;li>記号型のリスト&lt;/li>
+&lt;li>レベル1
+&lt;ul>
+&lt;li>レベル2
+&lt;ul>
+&lt;li>レベル3
+&lt;ul>
+&lt;li>レベル4
+&lt;ul>
+&lt;li>レベル5&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;ol>
+&lt;li>数字型のリスト&lt;/li>
+&lt;li>レベル1
+&lt;ol>
+&lt;li>レベル2
+&lt;ol>
+&lt;li>レベル3
+&lt;ol>
+&lt;li>レベル4
+&lt;ol>
+&lt;li>レベル5&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="表">表&lt;/h2>
+&lt;h3 id="中央揃え基本形">中央揃え（基本形）&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>A1&lt;/th>
+&lt;th>B1&lt;/th>
+&lt;th>C1&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>A2&lt;/td>
+&lt;td>B2&lt;/td>
+&lt;td>C2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>A3&lt;/td>
+&lt;td>B3&lt;/td>
+&lt;td>C3&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>A4&lt;/td>
+&lt;td>B4&lt;/td>
+&lt;td>C4&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="表の様々な揃え方">表の様々な揃え方&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th align="left">左揃え&lt;/th>
+&lt;th>中央揃え&lt;/th>
+&lt;th align="right">右揃え&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td align="left">A2&lt;/td>
+&lt;td>B2&lt;/td>
+&lt;td align="right">C2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td align="left">A3&lt;/td>
+&lt;td>B3&lt;/td>
+&lt;td align="right">C3&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td align="left">A4&lt;/td>
+&lt;td>B4&lt;/td>
+&lt;td align="right">C4&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="ソースコード">ソースコード&lt;/h2>
+&lt;pre>&lt;code class="language-C">
+#include&amp;lt;stdio.h&amp;gt;
+int main(void){
+printf(&amp;quot;Hello World?&amp;quot;);
+return 0;
+}
+&lt;/code>&lt;/pre>
+&lt;h2 id="引用">引用&lt;/h2>
+&lt;blockquote>
+&lt;p>まことに小さな国が、開化期を迎えようとしている。&lt;/p>
+&lt;p>小さなといえば、明治初年の日本ほど小さな国はなかったであろう。&lt;/p>
+&lt;p>産業といえば農業しかなく、人材といえば三百年の間、読書階級であった旧士族しかなかった。&lt;/p>
+&lt;p>明治維新によって、日本人ははじめて近代的な「国家」というものをもった。誰もが「国民」になった。&lt;/p>
+&lt;p>不慣れながら「国民」になった日本人たちは、日本史上の最初の体験者としてその新鮮さに昂揚した。&lt;/p>
+&lt;p>この痛々しいばかりの昂揚がわからなければ、この段階の歴史はわからない。&lt;/p>
+&lt;blockquote>
+&lt;p>スペシャルドラマ坂の上の雲 - NHK　冒頭&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;h2 id="取り消し線">取り消し線&lt;/h2>
+&lt;p>&lt;del>取り消し線&lt;/del>&lt;/p>
+&lt;h2 id="hugoショートコード">Hugoショートコード&lt;/h2>
+&lt;p>代表的なものだけを列挙します。
+その他は、
+&lt;a href="https://gohugo.io/content-management/shortcodes/" target="_blank" rel="noopener">参考リンク&lt;/a>参照。&lt;/p>
+&lt;h3 id="画像">画像&lt;/h3>
+&lt;figure id="figure-robohan-logo">
+&lt;a data-fancybox="" href="https://www.miraikikin.osaka-u.ac.jp/wp-content/uploads/2020/03/prj65.jpg" data-caption="Robohan Logo">
+&lt;img src="https://www.miraikikin.osaka-u.ac.jp/wp-content/uploads/2020/03/prj65.jpg" alt="" width="500px" >
+&lt;/a>
+&lt;figcaption>
+Robohan Logo
+&lt;/figcaption>
+&lt;/figure>
+&lt;h3 id="youtube">Youtube&lt;/h3>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/q1UOki3PdAM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>元リンク：
+&lt;a href="https://www.youtube.com/watch?v=q1UOki3PdAM" target="_blank" rel="noopener">https://www.youtube.com/watch?v=q1UOki3PdAM&lt;/a>&lt;/p>
+&lt;h3 id="tweet">Tweet&lt;/h3>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">本日RobohanのTwitterは10周年を迎えました❗&lt;br>&lt;br>先輩方の技術を受け継ぎ、来たるNHKロボコン2021に向けて、そしてその先に向けてがんばっていきます。&lt;br>&lt;br>今後もRobohanをよろしくお願いします❗&lt;br>&lt;br>1枚目:NHKロボコン2010&lt;br>2枚目:NHKロボコン2011&lt;br>3枚目:2020年度新歓の様子&lt;a href="https://twitter.com/hashtag/%E3%83%AD%E3%83%9C%E3%82%B3%E3%83%B3?src=hash&amp;amp;ref_src=twsrc%5Etfw">#ロボコン&lt;/a> &lt;a href="https://t.co/sCwP3YmaGw">pic.twitter.com/sCwP3YmaGw&lt;/a>&lt;/p>&amp;mdash; 大阪大学Robohan (@Robohan_) &lt;a href="https://twitter.com/Robohan_/status/1322437654475010048?ref_src=twsrc%5Etfw">October 31, 2020&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;p>元リンク：
+&lt;a href="https://twitter.com/Robohan_/status/1322437654475010048" target="_blank" rel="noopener">https://twitter.com/Robohan_/status/1322437654475010048&lt;/a>&lt;/p></description></item></channel></rss>
