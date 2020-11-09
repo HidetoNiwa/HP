@@ -2,7 +2,7 @@
 
 ## 概要
 
-これは、個人HP兼Blog（ https://www.hahahahaha-nnn.work/ ）のリポジトリです。
+これは、個人HP 兼 Blog（ https://www.hahahahaha-nnn.work/ ）のリポジトリです。
 
 Hugo + GitHub Pagesで構成されています。
 
@@ -13,6 +13,8 @@ Hugo + GitHub Pagesで構成されています。
 ### 参考
 
 GitHub Actions でカスタムドメインの設定を行う方法([参考リンク](https://tech-wafter.net/2020/deploy-custom-domain-github-pages-on-github-actions/))
+
+[サンプルページ](https://www.hahahahaha-nnn.work/sample/)
 
 ### License
 
