@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>eclipse | どと～るブログ</title><link>https://www.hahahahaha-nnn.work/category/eclipse/</link><atom:link href="https://www.hahahahaha-nnn.work/category/eclipse/index.xml" rel="self" type="application/rss+xml"/><description>eclipse</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Tue, 29 Dec 2020 10:55:40 +0900</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/img/logo.jpg</url><title>eclipse</title><link>https://www.hahahahaha-nnn.work/category/eclipse/</link></image><item><title>CubeIDEコード整形</title><link>https://www.hahahahaha-nnn.work/post/cubeide-formmating/</link><pubDate>Tue, 29 Dec 2020 10:55:40 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/cubeide-formmating/</guid><description>&lt;p>お久しぶりです，にゎ～んです．さて，今回はCubeIDEにおけるコード整形のお話を書いていきたいと思います．&lt;/p>
+&lt;h2 id="手動整形">手動整形&lt;/h2>
+&lt;p>整形したいファイル上で，「Ctrl」+「Shift」+「f」を押します．
+すると，下図のような選択が出てくるので好きな方を選んで「OK」を押します．&lt;/p>
+&lt;ul>
+&lt;li>そのファイル全部を行う．&lt;/li>
+&lt;li>その行のみ行う．&lt;/li>
+&lt;/ul>
+&lt;figure id="figure-コード整形選択肢">
+&lt;a data-fancybox="" href="https://www.hahahahaha-nnn.work/img/post/CubeIDE/Formmating.PNG" data-caption="コード整形選択肢">
+&lt;img src="https://www.hahahahaha-nnn.work/img/post/CubeIDE/Formmating.PNG" alt="" width="250px" >
+&lt;/a>
+&lt;figcaption>
+コード整形選択肢
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="自動整形">自動整形&lt;/h2>
+&lt;p>ページ上部の「Window」&amp;gt;「Preference」をクリック.&lt;/p>
+&lt;figure id="figure-windowpreference">
+&lt;a data-fancybox="" href="https://www.hahahahaha-nnn.work/img/post/CubeIDE/Formmating2.PNG" data-caption="「Window」&amp;gt;「Preference」">
+&lt;img src="https://www.hahahahaha-nnn.work/img/post/CubeIDE/Formmating2.PNG" alt="" width="450px" >
+&lt;/a>
+&lt;figcaption>
+「Window」&amp;gt;「Preference」
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Preference中の「C/C++」&amp;gt;「Editor」&amp;gt;「Save Actions」の&amp;quot;Format source code&amp;quot;にチェックを入れる．&lt;/p>
+&lt;figure id="figure-windowpreference">
+&lt;a data-fancybox="" href="https://www.hahahahaha-nnn.work/img/post/CubeIDE/Formmating3.PNG" data-caption="「Window」&amp;gt;「Preference」">
+&lt;img src="https://www.hahahahaha-nnn.work/img/post/CubeIDE/Formmating3.PNG" alt="" width="450px" >
+&lt;/a>
+&lt;figcaption>
+「Window」&amp;gt;「Preference」
+&lt;/figcaption>
+&lt;/figure></description></item></channel></rss>
