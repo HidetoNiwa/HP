@@ -45,6 +45,6 @@ projects: []
 
 {{< figure src="/img/post/CubeIDE/Formmating2.PNG" title="「Window」>「Preference」" width="450px">}}
 
-Preference中の「C/C++」>「Editor」>「Save Actions」の"Format source code"にチェックを入れる．
+Preference中の「C/C++」>「Editor」>「Save Actions」の"Format source code"にチェックを入れ，下の"Apply and Close"をクリック．
 
 {{< figure src="/img/post/CubeIDE/Formmating3.PNG" title="「Window」>「Preference」" width="450px">}}
