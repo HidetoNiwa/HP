@@ -26,54 +26,54 @@ theme = "academic"
 enableGitInfo = false
 
 # Default language to use (if you setup multilingual support)
-defaultContentLanguage = "ja"
+defaultContentLanguage = "ja" 
+defaultContentLanguageInSubdir = false 
 hasCJKLanguage = true # Set `true` for Chinese/Japanese/Korean languages.
-defaultContentLanguageInSubdir = false
-removePathAccents = true  # Workaround for https://github.com/gohugoio/hugo/issues/5687
+removePathAccents = true # Workaround for https://github.com/gohugoio/hugo/issues/5687
 
-summaryLength = 30  # Listing summary length in words. Also, see `abstract_length` in `params.toml`.
-paginate = 10  # Number of items per page in paginated lists.
-enableEmoji = true
-footnotereturnlinkcontents = "<sup>^</sup>"
-ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+enableEmoji = true 
+footnotereturnlinkcontents = "<sup>^</sup>" 
+ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"] 
+paginate = 10 # Number of items per page in paginated lists.
+summaryLength = 30 # Listing summary length in words. Also, see `abstract_length` in `params.toml`.
 
 # Workaround Hugo publishing taxonomy URLs as plurals - consistently use singular across Academic.
 [permalinks]
-  authors = "/author/:slug/"
-  tags = "/tag/:slug/"
-  categories = "/category/:slug/"
-  publication_types = "/publication-type/:slug/"
+authors = "/author/:slug/"
+categories = "/category/:slug/"
+publication_types = "/publication-type/:slug/"
+tags = "/tag/:slug/"
 
 [outputs]
-  home = [ "HTML", "RSS", "JSON", "WebAppManifest" ]
-  section = [ "HTML", "RSS" ]
+home = ["HTML", "RSS", "JSON", "WebAppManifest"]
+section = ["HTML", "RSS"]
 
 [mediaTypes."application/manifest+json"]
-  suffixes = ["webmanifest"]
+suffixes = ["webmanifest"]
 
 [outputFormats.WebAppManifest]
-  mediaType = "application/manifest+json"
-  rel = "manifest"
+mediaType = "application/manifest+json"
+rel = "manifest"
 
 [markup]
-  defaultMarkdownHandler = "goldmark"
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true  # Enable user to embed HTML snippets in Markdown content.
-  [markup.highlight]
-    codeFences = false  # Disable Hugo's code highlighter as it conflicts with Academic's highligher.
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 3
+defaultMarkdownHandler = "goldmark"
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true # Enable user to embed HTML snippets in Markdown content.
+[markup.highlight]
+codeFences = false # Disable Hugo's code highlighter as it conflicts with Academic's highligher.
+[markup.tableOfContents]
+endLevel = 3
+startLevel = 2
 
 [imaging]
-  resampleFilter = "lanczos"
-  quality = 90
-  anchor = "smart"  # Anchor for cropping. Options include Smart and Center.
+anchor = "smart" # Anchor for cropping. Options include Smart and Center.
+quality = 90 
+resampleFilter = "lanczos" 
 
 # Taxonomies.
 [taxonomies]
-  tag = "tags"
-  category = "categories"
-  publication_type = "publication_types"
-  author = "authors"
+author = "authors"
+category = "categories"
+publication_type = "publication_types"
+tag = "tags"
