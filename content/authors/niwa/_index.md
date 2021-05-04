@@ -59,5 +59,5 @@ NHK学生ロボコンで回路製作をしつつチーム運営を行ってい�
 
 - [大阪大学ロボット製作団体Robohan](https://www.robohan.net/) OB（回路班/運営系/鯖管）
 - [関西春ロボコン](https://xn--tck4d2b0a0029dol2bn0r.com/)運営委員会
-- OUXT 回路/運営班
-- 一般社団法人次世代ロボットエンジニア支援機構（Scramble） <br>運営・広報イベントG イベント係
+- [OUXT](https://www.ouxt.jp/) 回路/運営班
+- [一般社団法人次世代ロボットエンジニア支援機構（Scramble）](https://www.scramble-robot.org/) <br>運営・広報イベントG イベント係
