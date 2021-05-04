@@ -2,10 +2,10 @@
 name = "Minimal"
 
 # Optional Google font URL
-google_fonts = "Sawarabi+Mincho"
+google_fonts = "M+PLUS+Rounded+1c|M+PLUS+1p"
 
 # Font families
-heading_font = "Sawarabi Mincho"
-body_font = "Sawarabi Mincho"
-nav_font = "Sawarabi Mincho"
-mono_font = "Sawarabi Mincho"
+body_font = "M PLUS 1p"
+heading_font = "M PLUS Rounded 1c"
+mono_font = "M PLUS Rounded 1c"
+nav_font = "M PLUS Rounded 1c"
