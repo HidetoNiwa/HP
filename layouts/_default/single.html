@@ -1,0 +1,22 @@
+{{- define "main" -}}
+
+<article class="article">
+
+  {{ partial "page_header" . }}
+
+  <div class="article-container">
+    
+
+    <div class="article-style">
+      <p size="15pt">目次</p>
+      {{ .TableOfContents }}
+      <hr>
+      {{ .Content }}
+    </div>
+
+    {{ partial "page_footer" . }}
+
+  </div>
+</article>
+
+{{- end -}}
