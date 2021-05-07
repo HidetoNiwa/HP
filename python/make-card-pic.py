@@ -1,5 +1,8 @@
 ##############################################################
 # 【参考】
+# https://qiita.com/Yuu94/items/9ffdfcb2c26d6b33792e
+# https://note.nkmk.me/python-split-rsplit-splitlines-re/
+# https://note.nkmk.me/python-listdir-isfile-isdir/
 # Pythonで文字画像を作る
 # http://kamiya.tech/blog/draw-font/
 # PIL（Python Imaging Library）を使って画像ファイルを作成する。(Qiita)
@@ -9,6 +12,7 @@
 ##############################################################
 
 from PIL import Image, ImageDraw, ImageFont
+import os
 
 height = 400
 horizontal = 764
@@ -23,6 +27,13 @@ def get_title(file_path):
     title=text.split('"')
     print(title)
     return title[1]
+
+#ディレクトリ取得
+def get_dir(path,num):
+    path=os.path('./content/')
+    print(path)
+
+
 
 #文字未入れ状態の画像作成
 def make_bace_image(logo_path,img_path):
