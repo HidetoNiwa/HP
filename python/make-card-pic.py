@@ -13,6 +13,17 @@ from PIL import Image, ImageDraw, ImageFont
 height = 400
 horizontal = 764
 
+#記事タイトル取得
+def get_title(file_path):
+    print("Open file...",file_path)
+    
+    f = open(file_path, 'r',encoding="utf-8") #File Open（文字コード指定）
+    datalist = f.readlines()
+    text=datalist[3] #自分の環境では3行目にtitleが存在するため
+    title=text.split('"')
+    print(title)
+    return title[1]
+
 #文字未入れ状態の画像作成
 def make_bace_image(logo_path,img_path):
     tmp = Image.new('RGB', (horizontal, height), (0xFF, 0xFF, 0xFF)) # dummy for get text_size
@@ -33,6 +44,9 @@ def make_image(font_path, img_path,text,x=0.0 ,y=0.0, font_size=32, font_color="
     img_d.text((x-(text_size[0]/2),y-(text_size[1]/2)), text, fill=font_color, font=font)
     img.save(img_path)
 
+title=get_title(".\content\post\how_to_hugo_post.md")
+
 make_bace_image(".\static\img\logo.jpg", ".\python\card.png")
-make_image(".\python\MPLUSRounded1c-Medium.ttf" ,".\python\card.png", "どと～る ブログ",horizontal*0.75, height*0.45,38)
-make_image(".\python\MPLUSRounded1c-Light.ttf" , ".\python\card.png", "https://www.hahahahaha-nnn.work",horizontal*0.75, height*0.55,18)
+make_image(".\python\MPLUSRounded1c-Medium.ttf" ,".\python\card.png", "どと～る ブログ",horizontal*0.75, height*0.4,42)
+make_image(".\python\MPLUSRounded1c-Medium.ttf" ,".\python\card.png", title,horizontal*0.75, height*0.53,32)
+make_image(".\python\MPLUSRounded1c-Light.ttf" , ".\python\card.png", "https://www.hahahahaha-nnn.work",horizontal*0.75, height*0.62,18)
