@@ -56,28 +56,7 @@ projects: []
 - Twitter：[@kansai_robocon](https://twitter.com/kansai_robocon)
 - GitHub：[https://github.com/Kansai-SpringRobocon](https://github.com/Kansai-SpringRobocon)
 
-### OUXT Polaris
 
-{{< figure src="https://www.ouxt.jp/author/ouxt-polaris/avatar_hu334bf1a4a42285b66ba2952f3b2917af_13445_270x270_fill_q90_lanczos_center.jpg" class="center">}}
-
-#### 概要
-
-[Maritime Robotx Challenge](https://www.robotx.org/)へむけて結成された学生主体のロボコンチーム。<br>
-[WAM-V](http://www.wam-v.com/)といった船体に制御機器、センサーを搭載し、完全自動操縦で大会中のタスクをこなしていく。
-
-#### 所属
-
-- 2020年大会 副リーダー<br>
-- 運営班
-
-> チームの運営仕事（事務仕事が主）を行っています。<br>
-> 広報関係を主にやっています。
-
-#### 参考リンク
-
-- Home Page：[https://www.ouxt.jp/](https://www.ouxt.jp/)
-- Twitter：[@OUXT_Polaris](https://twitter.com/OUXT_Polaris)
-- GitHub：[https://github.com/OUXT-Polaris](https://github.com/OUXT-Polaris)
 
 ### 一般社団法人次世代ロボットエンジニア支援機構（通称：Scramble）
 
@@ -107,7 +86,7 @@ projects: []
 
 ### 大阪大学公認ロボット製作団体 Robohan
 
-{{< figure src="https://scontent-nrt1-1.xx.fbcdn.net/v/t31.0-8/413965_142496685900193_445546923_o.jpg?_nc_cat=101&ccb=2&_nc_sid=e3f864&_nc_ohc=NhTV2G4Ibe0AX-81KWG&_nc_ht=scontent-nrt1-1.xx&oh=6af642e8fad45d1664f3ad65fc6d42a0&oe=5FCFE943" class="center">}}
+{{< figure src="https://blog.robohan.net/logos/robohan2.png" class="center">}}
 
 #### 概要
 
@@ -127,3 +106,26 @@ projects: []
 - Twitter：[@Robohan_](https://twitter.com/Robohan_)
 - GitHub：[https://github.com/RobohanOU](https://github.com/RobohanOU)
 - 大阪大学未来基金：[https://www.miraikikin.osaka-u.ac.jp/450/](https://www.miraikikin.osaka-u.ac.jp/450/)
+
+### OUXT Polaris
+
+{{< figure src="https://www.ouxt.jp/author/ouxt-polaris/avatar_hu334bf1a4a42285b66ba2952f3b2917af_13445_270x270_fill_q90_lanczos_center.jpg" class="center">}}
+
+#### 概要
+
+[Maritime Robotx Challenge](https://www.robotx.org/)へむけて結成された学生主体のロボコンチーム。<br>
+[WAM-V](http://www.wam-v.com/)といった船体に制御機器、センサーを搭載し、完全自動操縦で大会中のタスクをこなしていく。
+
+#### 所属
+
+- 2020年大会 副リーダー<br>
+- 運営班
+
+> チームの運営仕事（事務仕事が主）を行っていました。<br>
+> 広報関係を主にやっていました。
+
+#### 参考リンク
+
+- Home Page：[https://www.ouxt.jp/](https://www.ouxt.jp/)
+- Twitter：[@OUXT_Polaris](https://twitter.com/OUXT_Polaris)
+- GitHub：[https://github.com/OUXT-Polaris](https://github.com/OUXT-Polaris)
