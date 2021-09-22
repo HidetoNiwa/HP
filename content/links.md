@@ -8,7 +8,7 @@ authors: [HidetoNiwa]
 tags: [関西春ロボコン,robohan,OUXT,scramble]
 categories: [関西春ロボコン,robohan,OUXT,scramble]
 date: 2020-05-15T17:39:04+09:00
-lastmod: 2020-05-15T17:39:04+09:00
+lastmod: 2021-09-22T17:39:04+09:00
 featured: false
 draft: false
 
