@@ -5,8 +5,8 @@ title: "公開資料"
 subtitle: ""
 summary: "インターネット上に公開している各種資料"
 authors: [HidetoNiwa]
-tags: [回路]
-categories: [回路]
+tags: [回路,Arduino]
+categories: [回路,Arduino]
 date: 2020-10-07T00:45:12+09:00
 lastmod: 2020-10-07T00:45:12+09:00
 featured: false
@@ -30,6 +30,30 @@ projects: []
 
 インターネット上に公開している各種資料をまとめたページとなります。
 
+## Robohanにおける回路構成（2017/12）
+
+発表日：2017/12/??
+
+Robohanにおける回路構成をまとめた資料。（2017/12現在のものとなるので現在とは構成は異なります。）
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/iBFMvoXsLhSWH7" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser15f197/robohan" title="Robohanにおける回路構成" target="_blank">Robohanにおける回路構成</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser15f197" target="_blank">どと〜る </a></strong> </div>
+
+## Arduinoを用いたキソ電子工作 4
+
+発表日：2020/10/28
+
+母校、高校科学部にてオンライン形式にて説明した資料
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/wYXcdQY7Z8qf51" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser15f197/arduino4" title="Arduinoを用いたキソ電子工作-4" target="_blank">Arduinoを用いたキソ電子工作-4</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser15f197" target="_blank">どと〜る </a></strong> </div>
+
+## Arduinoを用いたキソ電子工作 3
+
+発表日：2020/10/14
+
+母校、高校科学部にてオンライン形式にて説明した資料
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/8aH4bXVbqutitQ" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser15f197/arduino3-239207264" title="Arduinoを用いたキソ電子工作3" target="_blank">Arduinoを用いたキソ電子工作3</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser15f197" target="_blank">どと〜る </a></strong> </div>
+
 ## Arduinoを用いたキソ電子工作 2
 
 発表日：2020/10/07
@@ -38,7 +62,7 @@ projects: []
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/iVBnMBseaWCzZN" width="592" height="333" frameborder="1" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser15f197/arduino2-238765276" title="Arduinoを用いたキソ電子工作2" target="_blank">Arduinoを用いたキソ電子工作2</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser15f197" target="_blank">どと〜る </a></strong> </div>
 
-## Arduinoを用いた基礎電子工作
+## Arduinoを用いたキソ電子工作
 
 発表日：2020/09/08
 
