@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>どと～るブログ</title><link>https://www.hahahahaha-nnn.work/</link><atom:link href="https://www.hahahahaha-nnn.work/index.xml" rel="self" type="application/rss+xml"/><description>どと～るブログ</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Mon, 09 Nov 2020 17:52:24 +0900</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/img/twitter-card.jpg</url><title>どと～るブログ</title><link>https://www.hahahahaha-nnn.work/</link></image><item><title>CubeIDEコード整形</title><link>https://www.hahahahaha-nnn.work/post/cubeide-formmating/</link><pubDate>Tue, 29 Dec 2020 10:55:40 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/cubeide-formmating/</guid><description>&lt;p>お久しぶりです，にゎ～んです．さて，今回はCubeIDEにおけるコード整形のお話を書いていきたいと思います．&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>どと～るブログ</title><link>https://www.hahahahaha-nnn.work/</link><atom:link href="https://www.hahahahaha-nnn.work/index.xml" rel="self" type="application/rss+xml"/><description>どと～るブログ</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Mon, 09 Nov 2020 17:52:24 +0900</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/img/twitter-card.jpg</url><title>どと～るブログ</title><link>https://www.hahahahaha-nnn.work/</link></image><item><title>git コマンド集</title><link>https://www.hahahahaha-nnn.work/pages/git-command/</link><pubDate>Thu, 23 Sep 2021 00:43:38 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/pages/git-command/</guid><description>&lt;p>
+&lt;a href="https://github.com/" target="_blank" rel="noopener">GitHub&lt;/a>など、ソースコード管理でよく使われるgit。&lt;/p>
+&lt;p>Visual Studio CodeなどでGUIでgitを使うこともできますが、やはり細かい操作はコマンドラインでしたいですよね！（実際に筆者はそう思っています。）&lt;/p>
+&lt;p>そのコマンドラインでの備忘録として、まとめています。使うコマンドが増えれば追記していきます（たぶん）&lt;/p>
+&lt;h2 id="clone系">clone系&lt;/h2>
+&lt;pre>&lt;code class="language-bash">git clone &amp;lt;URL&amp;gt; &amp;lt;cloneするフォルダ名&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;h2 id="branch系">branch系&lt;/h2>
+&lt;h3 id="ローカルのbranch名変更">ローカルのbranch名変更&lt;/h3>
+&lt;pre>&lt;code class="language-bash">git branch -m &amp;lt;古いブランチ名&amp;gt; &amp;lt;新しいブランチ名&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;h2 id="add系">add系&lt;/h2>
+&lt;p>gitで次にcommitするファイルの追加&lt;/p>
+&lt;pre>&lt;code class="language-bash">git add -A #全てのファイルの場合
+&lt;/code>&lt;/pre>
+&lt;h2 id="commit系">commit系&lt;/h2>
+&lt;h3 id="コミットメッセージ付けてcommit">コミットメッセージ付けてcommit&lt;/h3>
+&lt;pre>&lt;code class="language-bash">git commit -m &amp;quot;（コミットメッセージ）&amp;quot;
+&lt;/code>&lt;/pre>
+&lt;h2 id="push系">push系&lt;/h2>
+&lt;p>オンラインサーバへpush&lt;/p>
+&lt;h3 id="originサーバへbranchを追加">originサーバへbranchを追加&lt;/h3>
+&lt;pre>&lt;code class="language-bash">git push --set-upstream origin &amp;lt;branch名&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;h3 id="originサーバへpush">originサーバへpush&lt;/h3>
+&lt;pre>&lt;code class="language-bash">git push
+&lt;/code>&lt;/pre></description></item><item><title>CubeIDEコード整形</title><link>https://www.hahahahaha-nnn.work/post/cubeide-formmating/</link><pubDate>Tue, 29 Dec 2020 10:55:40 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/cubeide-formmating/</guid><description>&lt;p>お久しぶりです，にゎ～んです．さて，今回はCubeIDEにおけるコード整形のお話を書いていきたいと思います．&lt;/p>
 &lt;h2 id="手動整形">手動整形&lt;/h2>
 &lt;p>整形したいファイル上で，「Ctrl」+「Shift」+「f」を押します．
 すると，下図のような選択が出てくるので好きな方を選んで「OK」を押します．&lt;/p>
