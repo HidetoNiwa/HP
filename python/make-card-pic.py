@@ -1,31 +1,43 @@
 ##############################################################
 # 【参考】
-# https://note.nkmk.me/python-glob-usage/
-# https://qiita.com/Yuu94/items/9ffdfcb2c26d6b33792e
-# https://note.nkmk.me/python-split-rsplit-splitlines-re/
+# https:/note.nkmk.me/python-glob-usage/
+# https:/qiita.com/Yuu94/items/9ffdfcb2c26d6b33792e
+# https:/note.nkmk.me/python-split-rsplit-splitlines-re/
 # Pythonで文字画像を作る
-# http://kamiya.tech/blog/draw-font/
+# http:/kamiya.tech/blog/draw-font/
 # PIL（Python Imaging Library）を使って画像ファイルを作成する。(Qiita)
-# https://qiita.com/suto3/items/5181b4a3b9ebc206f579
+# https:/qiita.com/suto3/items/5181b4a3b9ebc206f579
 # 同一要素の削除
-# https://ja.stackoverflow.com/questions/21070/Pythonで1次元のリストを比較し-同一の要素の削除について
+# https:/ja.stackoverflow.com/questions/21070/Pythonで1次元のリストを比較し-同一の要素の削除について
 # Pythonでの文字列抽出
-# https://note.nkmk.me/python-str-extract/
+# https:/note.nkmk.me/python-str-extract/
 
 # Author : Hideto Niwa
 ##############################################################
 
 from PIL import Image, ImageDraw, ImageFont
+import unicodedata
 import glob
 import re
 
 height = 400
 horizontal = 764
 
-ignore_list = {"./content\\privacy.md", "./content\\terms.md","./content\\authors\\niwa\\_index.md","./content\\home\\about.md","./content\\home\\index.md","./content\\home\\posts.md","./content\\home\\skills.md","./content\\post\\_index.md","./content\\publication\\_index.md","./content\\talk\\_index.md"}
+#カード作成を無視するファイルリスト
+ignore_list = {"./content/privacy.md", "./content/terms.md","./content/authors/niwa/_index.md","./content/home/about.md","./content/home/index.md","./content/home/posts.md","./content/home/skills.md","./content/post/_index.md","./content/publication/_index.md","./content/talk/_index.md"}
+
+# 文字数取得（全角2文字、半角1文字）
+# 参考：https://note.nkmk.me/python-unicodedata-east-asian-width-count/
+def get_east_asian_width_count(text):
+    count = 0
+    for c in text:
+        if unicodedata.east_asian_width(c) in 'FWA':
+            count += 2
+        else:
+            count += 1
+    return count
 
 # 記事タイトル取得
-
 def get_title(file_path):
     print("Open file...", file_path)
 
@@ -45,9 +57,10 @@ def get_dir():
     return file_list
 
 # 文字未入れ状態の画像作成
-def make_bace_image(logo_path, img_path):
+def make_base_image(logo_path, img_path):
     tmp = Image.new('RGB', (horizontal, height),
                     (0xFF, 0xFF, 0xFF))  # dummy for get text_size
+    print(logo_path)
     logo = Image.open(logo_path)
 
     save_img = tmp.copy()
@@ -55,6 +68,8 @@ def make_bace_image(logo_path, img_path):
     save_img.save(img_path)
 
 # 文字入れ部分
+
+#TODO:12文字以上で文字サイズ縮小
 def make_image(font_path, img_path, text, x=0.0, y=0.0, font_size=32, font_color="black"):
     font = ImageFont.truetype(font_path, font_size)
     img = Image.open(img_path)
@@ -87,19 +102,23 @@ def add_card_pic_data(file_path,card_path):
 file_list = get_dir()
 
 for i in file_list:
-    print(i, "...")
     title = get_title(i)
     save_pic_filename=i[9:]
     save_pic_filename=save_pic_filename[:-3]
     #print(save_pic_filename)
 
-    save_pic_dir='.\static\img\card'+save_pic_filename+'.png'
+    save_pic_dir='./static/img/card'+save_pic_filename+'.png'
 
     #print(save_pic_dir)
 
-    make_bace_image(".\static\img\logo.jpg", save_pic_dir)
-    make_image(".\python\MPLUSRounded1c-Medium.ttf" ,save_pic_dir, "どと～る ブログ",horizontal*0.75, height*0.4,42)
-    make_image(".\python\MPLUSRounded1c-Medium.ttf" ,save_pic_dir, title,horizontal*0.75, height*0.53,32)
-    make_image(".\python\MPLUSRounded1c-Light.ttf" , save_pic_dir, "https://www.hahahahaha-nnn.work",horizontal*0.75, height*0.62,18)
+    make_base_image("./static/img/logo.jpg", save_pic_dir)
+    make_image("./python/MPLUSRounded1c-Medium.ttf" ,save_pic_dir, "どと～る ブログ",horizontal*0.75, height*0.4,42)
+
+    if get_east_asian_width_count(title)>24:
+        make_image("./python/MPLUSRounded1c-Medium.ttf" ,save_pic_dir, title,horizontal*0.75, height*0.53,16)
+    else:
+        make_image("./python/MPLUSRounded1c-Medium.ttf" ,save_pic_dir, title,horizontal*0.75, height*0.53,32)
+
+    make_image("./python/MPLUSRounded1c-Light.ttf" , save_pic_dir, "https:/www.hahahahaha-nnn.work",horizontal*0.75, height*0.62,18)
     print(i)
     add_card_pic_data(i,save_pic_dir)
