@@ -12,9 +12,14 @@ Hugo + GitHub Pagesで構成されています。
 
 ### 参考
 
-GitHub Actions でカスタムドメインの設定を行う方法([参考リンク](https://tech-wafter.net/2020/deploy-custom-domain-github-pages-on-github-actions/))
+- GitHub Actions でカスタムドメインの設定を行う方法([参考リンク](https://tech-wafter.net/2020/deploy-custom-domain-github-pages-on-github-actions/))
+- [サンプルページ](https://www.hahahahaha-nnn.work/sample/)
 
-[サンプルページ](https://www.hahahahaha-nnn.work/sample/)
+#### 新規ページ追加方法
+
+```bash
+hugo new post/（記事名）
+```
 
 ### License
 
