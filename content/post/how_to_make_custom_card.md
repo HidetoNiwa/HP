@@ -7,8 +7,8 @@ summary: ""
 authors: [HidetoNiwa]
 tags: [Hugo,Twitter]
 categories: [Hugo,Twitter]
-date: 2022-01-02T07:24:03Z
-lastmod: 2022-01-02T07:24:03Z
+date: 2022-01-01T07:24:03Z
+lastmod: 2022-01-01T07:24:03Z
 featured: false
 draft: false
 

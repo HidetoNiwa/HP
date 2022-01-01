@@ -1,4 +1,8 @@
-# HidetoNiwa/HP [![Actions Status](https://github.com/HidetoNiwa/HP/workflows/github%20pages/badge.svg)](https://github.com/HidetoNiwa/HP/actions)
+# HidetoNiwa/HP 
+
+[![Actions Status](https://github.com/HidetoNiwa/HP/workflows/github%20pages/badge.svg)](https://github.com/HidetoNiwa/HP/actions) 
+![GitHub repo size](https://img.shields.io/github/repo-size/HidetoNiwa/HP?style=flat-square)
+![GitHub top language](https://img.shields.io/github/languages/top/HidetoNiwa/HP?style=flat-square)
 
 ## 概要
 
@@ -7,6 +11,9 @@
 Hugo + GitHub Pagesで構成されています。
 
 このサイトの基本となっているのは、HugoのAcademic Themeです。
+
+## Author
+- Twitter:[@hahahahaha_NNN](https://twitter.com/hahahahaha_NNN)
 
 ## その他
 
@@ -26,5 +33,3 @@ hugo new post/（記事名）
 Copyright 2017-present [George Cushen](https://georgecushen.com).
 
 Released under the [MIT](https://github.com/sourcethemes/academic-kickstart/blob/master/LICENSE.md) license.
-
-[![Analytics](https://ga-beacon.appspot.com/UA-78646709-2/academic-kickstart/readme?pixel)](https://github.com/igrigorik/ga-beacon)
