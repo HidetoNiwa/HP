@@ -12,6 +12,7 @@ lastmod: 2021-09-22T00:45:12+09:00
 featured: false
 draft: false
 
+card_image: "card/pages/resource.png"
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.

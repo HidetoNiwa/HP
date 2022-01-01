@@ -12,6 +12,7 @@ lastmod: 2021-09-23T00:43:38+09:00
 featured: false
 draft: false
 
+card_image: "card/pages/git-command.png"
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.

@@ -12,6 +12,7 @@ lastmod: 2020-04-30T00:15:41+09:00
 featured: false
 draft: false
 
+card_image: "card/post/first-post.png"
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.

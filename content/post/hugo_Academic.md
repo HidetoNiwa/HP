@@ -12,6 +12,7 @@ lastmod: 2020-05-22T00:29:36+09:00
 featured: false
 draft: false
 
+card_image: "card/post/hugo_Academic.png"
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.

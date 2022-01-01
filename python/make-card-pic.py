@@ -15,6 +15,7 @@
 # Author : Hideto Niwa
 ##############################################################
 
+from os import stat_result
 from PIL import Image, ImageDraw, ImageFont
 import unicodedata
 import glob
@@ -43,8 +44,14 @@ def get_title(file_path):
 
     f = open(file_path, 'r', encoding="utf-8")  # File Open（文字コード指定）
     datalist = f.readlines()
-    text = datalist[3]  # 自分の環境では3行目にtitleが存在するため
-    title = text.split('"')
+    f.close()
+    title_string = "title: "
+
+    for i in range(len(datalist)):
+        text = datalist[i]
+        title = text.split('"')
+        if title[0] == title_string:
+            break
     print(title)
     return title[1]
 
@@ -53,14 +60,13 @@ def get_dir():
     path = './content/**/*.md'
     file_list = glob.glob(path, recursive=True)
     file_list = list(filter(lambda x: x not in ignore_list, file_list))
-    print(file_list)
     return file_list
 
 # 文字未入れ状態の画像作成
 def make_base_image(logo_path, img_path):
     tmp = Image.new('RGB', (horizontal, height),
                     (0xFF, 0xFF, 0xFF))  # dummy for get text_size
-    print(logo_path)
+    print("output dir : ",logo_path)
     logo = Image.open(logo_path)
 
     save_img = tmp.copy()
@@ -68,8 +74,6 @@ def make_base_image(logo_path, img_path):
     save_img.save(img_path)
 
 # 文字入れ部分
-
-#TODO:12文字以上で文字サイズ縮小
 def make_image(font_path, img_path, text, x=0.0, y=0.0, font_size=32, font_color="black"):
     font = ImageFont.truetype(font_path, font_size)
     img = Image.open(img_path)
@@ -91,13 +95,46 @@ def add_card_pic_data(file_path,card_path):
 
     while line:
         if count==add_line:
-            print(line)
             card_path=card_path[8:]
             add_text='featured_image: .'+card_path
-            print(add_text)
         line=file.readline()
         count+=1
     #print(card_path)
+
+def add_card_info(file_path,card_path):
+    f = open(file_path, 'r', encoding="utf-8")  # File Open（文字コード指定）
+    datalist = f.readlines()
+    f.close()
+
+    card_path = card_path[13:]
+    img_string = "card_image:"
+    section_string = "---"
+
+    start_formatter = False
+    img_info = False
+
+    for i in range(len(datalist)):
+        text = datalist[i][:11]
+        if text == img_string:
+            img_info = True
+            break
+        text = text[:3]
+        if text == section_string:
+            if start_formatter:
+                break
+            else:
+                start_formatter=True
+    
+    card_info = img_string + " " + '"'+card_path+'"\n'
+    if img_info:
+        datalist[i]=card_info
+    else:
+        datalist.insert(14,card_info)
+
+    f = open(file_path, 'w', encoding="utf-8")  # File Open（文字コード指定）
+    f.writelines(datalist)
+    f.close()
+    return text
 
 file_list = get_dir()
 
@@ -121,4 +158,6 @@ for i in file_list:
 
     make_image("./python/MPLUSRounded1c-Light.ttf" , save_pic_dir, "https:/www.hahahahaha-nnn.work",horizontal*0.75, height*0.62,18)
     print(i)
-    add_card_pic_data(i,save_pic_dir)
+    add_card_pic_data(i,save_pic_dir) #カード画像を保存
+    add_card_info(i,save_pic_dir)
+    print()
