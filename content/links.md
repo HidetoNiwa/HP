@@ -36,7 +36,7 @@ projects: []
 
 ### 関西春ロボコン運営委員会
 
-{{< figure src="https://pbs.twimg.com/profile_images/1219193661285519361/JcLlEmnb_400x400.jpg" class="center">}}
+{{< figure src="https://pbs.twimg.com/profile_images/1455761429777489922/XN138Ukf_400x400.jpg" class="center">}}
 
 #### 概要
 
@@ -44,24 +44,22 @@ projects: []
 
 #### 所属
 
-- 2021年大会 運営委員会長
 - 広報係
 - 資金獲得係
 
-> 運営委員会長として、運営委員会全体のマネジメントを行っています。<br>
+> 運営委員会全体のマネジメントを行っています。<br>
 > 大会の広報/資金獲得のお仕事もしています。
 
 #### 参考リンク
 
 - Home Page：[https://関西春ロボコン.com/](https://xn--tck4d2b0a0029dol2bn0r.com/)
 - Twitter：[@kansai_robocon](https://twitter.com/kansai_robocon)
+- Facebook：[@kansai.robocon](https://facebook.com/kansai.robocon/)
 - GitHub：[https://github.com/Kansai-SpringRobocon](https://github.com/Kansai-SpringRobocon)
-
-
 
 ### 一般社団法人次世代ロボットエンジニア支援機構（通称：Scramble）
 
-{{< figure src="https://scramble-robot.org/wp-content/uploads/2020/04/webpage_top_logo.png" class="center">}}
+{{< figure src="https://scramble-robot.org/wp-content/uploads/2020/04/webpage_top_logo.png" class="center" width="75%">}}
 
 #### 概要
 

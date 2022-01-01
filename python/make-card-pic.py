@@ -15,11 +15,9 @@
 # Author : Hideto Niwa
 ##############################################################
 
-from os import stat_result
 from PIL import Image, ImageDraw, ImageFont
 import unicodedata
 import glob
-import re
 
 height = 400
 horizontal = 764
@@ -85,22 +83,6 @@ def make_image(font_path, img_path, text, x=0.0, y=0.0, font_size=32, font_color
                text, fill=font_color, font=font)
     img.save(img_path)
 
-# カードのdir情報を追加する部分
-def add_card_pic_data(file_path,card_path):
-    add_line=14 #追加する行数指定
-
-    file=open(file_path,'r',encoding="utf-8")
-    line=file.readline()
-    count=1
-
-    while line:
-        if count==add_line:
-            card_path=card_path[8:]
-            add_text='featured_image: .'+card_path
-        line=file.readline()
-        count+=1
-    #print(card_path)
-
 def add_card_info(file_path,card_path):
     f = open(file_path, 'r', encoding="utf-8")  # File Open（文字コード指定）
     datalist = f.readlines()
@@ -156,8 +138,6 @@ for i in file_list:
     else:
         make_image("./python/MPLUSRounded1c-Medium.ttf" ,save_pic_dir, title,horizontal*0.75, height*0.53,32)
 
-    make_image("./python/MPLUSRounded1c-Light.ttf" , save_pic_dir, "https:/www.hahahahaha-nnn.work",horizontal*0.75, height*0.62,18)
-    print(i)
-    add_card_pic_data(i,save_pic_dir) #カード画像を保存
+    make_image("./python/MPLUSRounded1c-Light.ttf" , save_pic_dir, "https:/www.hahahahaha-nnn.work",horizontal*0.75, height*0.64,18)
     add_card_info(i,save_pic_dir)
     print()
