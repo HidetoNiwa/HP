@@ -12,6 +12,7 @@ lastmod: 2020-05-15T16:40:00+09:00
 featured: false
 draft: false
 
+card_image: "card/pages/hugo-shortcode.png"
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.

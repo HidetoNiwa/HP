@@ -158,11 +158,14 @@
     {{ $has_logo := fileExists "assets/images/logo.png" | or (fileExists "assets/images/logo.svg") }}
     {{ $og_image := "" }}
     {{ $twitter_card := "summary_large_image" }}
+
     {{ if (and (eq .Kind "taxonomy") $avatar_image) }}
       {{ $og_image = ($avatar_image.Fill "270x270 Center").Permalink }}{{/* Match image proc in About widget. */}}
       {{ $twitter_card = "summary" }}
     {{ else if $featured_image }}
       {{ $og_image = $featured_image.Permalink }}
+    {{ else if isset .Params "card_image" }}<!--Twitterカード等に用いられる画像があるかの判定、Front Matter-->
+      {{ $og_image = printf "img/%s" .Params.card_image | absURL }}
     {{ else if .Params.header.image }}
       {{ $og_image = printf "img/%s" .Params.header.image | absURL }}
     {{ else if site.Params.sharing_image }}
@@ -176,6 +179,8 @@
     {{ end }}
     {{ $scr.Set "og_image" $og_image }}{{/* Set `og_image` globally for `rss.xml`. */}}
     <meta property="twitter:card" content="{{ $twitter_card }}">
+    {{ if .IsPage }}
+    {{end}}
     {{ with site.Params.twitter }}
     <meta property="twitter:site" content="@{{ . }}">
     <meta property="twitter:creator" content="@{{ . }}">
