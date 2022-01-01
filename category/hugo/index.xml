@@ -1,4 +1,180 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo | どと～るブログ</title><link>https://www.hahahahaha-nnn.work/category/hugo/</link><atom:link href="https://www.hahahahaha-nnn.work/category/hugo/index.xml" rel="self" type="application/rss+xml"/><description>Hugo</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Fri, 22 May 2020 00:29:36 +0900</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/img/twitter-card.jpg</url><title>Hugo</title><link>https://www.hahahahaha-nnn.work/category/hugo/</link></image><item><title>Hugo Academicテーマの導入</title><link>https://www.hahahahaha-nnn.work/post/hugo_academic/</link><pubDate>Fri, 22 May 2020 00:29:36 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/hugo_academic/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo | どと～るブログ</title><link>https://www.hahahahaha-nnn.work/category/hugo/</link><atom:link href="https://www.hahahahaha-nnn.work/category/hugo/index.xml" rel="self" type="application/rss+xml"/><description>Hugo</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Sat, 01 Jan 2022 07:24:03 +0000</lastBuildDate><image><url>https://www.hahahahaha-nnn.work/img/twitter-card.jpg</url><title>Hugo</title><link>https://www.hahahahaha-nnn.work/category/hugo/</link></image><item><title>Twitterカードの作り方</title><link>https://www.hahahahaha-nnn.work/post/how_to_make_custom_card/</link><pubDate>Sat, 01 Jan 2022 07:24:03 +0000</pubDate><guid>https://www.hahahahaha-nnn.work/post/how_to_make_custom_card/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>お久しぶりです。どと〜ること、にゎ〜んです。先日、このブログにページごとのTwitterカード画像を生成して適用させることができるようになったと、Tweetしました。このページではその方法に関して説明していきたいと思います。&lt;/p>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">久しぶりに、自分のブログに機能を実装した～&lt;br>Pythonで、&lt;br>・記事タイトルを取得&lt;br>・記事タイトルから、Twitterカード用画像を自動生成&lt;br>・Twitterカード用画像を記事中に指定して反映&lt;br>させるようにした！&lt;br>&lt;br>Qiitaの記事のようなカッコいいカードが生成されるようになった！&lt;a href="https://t.co/aJn4YhTENW">https://t.co/aJn4YhTENW&lt;/a>&lt;/p>&amp;mdash; どと～る☕ (@hahahahaha_NNN) &lt;a href="https://twitter.com/hahahahaha_NNN/status/1477264343045574656?ref_src=twsrc%5Etfw">January 1, 2022&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;h3 id="環境">環境&lt;/h3>
+&lt;p>今回使用した環境は下記に列挙する環境です。version等揃える必要なない（と思う）ですが、この環境で作ってたんだーくらいは感じてください。&lt;/p>
+&lt;ul>
+&lt;li>Hugo Extended&lt;/li>
+&lt;li>GitHub Pages&lt;/li>
+&lt;li>Python3.8&lt;/li>
+&lt;/ul>
+&lt;h2 id="twitterカードとは">Twitterカードとは？&lt;/h2>
+&lt;p>先述のTweetの様に、Twitterにリンクを共有した際に、リンクが画像として表示される機能です。&lt;/p>
+&lt;p>&amp;lt;メリット&amp;gt;&lt;/p>
+&lt;ul>
+&lt;li>Twitter上で画像でリンクが出るのでクリックされやすい&lt;/li>
+&lt;/ul>
+&lt;p>&amp;lt;デメリット&amp;gt;&lt;/p>
+&lt;ul>
+&lt;li>クライアント側でTweetを見たときに画像を取得するので、データ通信量/サーバへの負荷がかかる？（多分）&lt;/li>
+&lt;/ul>
+&lt;p>まぁ、圧倒的にメリット＞デメリットなので設定したほうがいいですね。&lt;/p>
+&lt;h2 id="実装">実装&lt;/h2>
+&lt;p>では、いざ実装しましょう。下記のような順番で実装を行っていきます。&lt;/p>
+&lt;ul>
+&lt;li>画像生成
+&lt;ul>
+&lt;li>画像へブログ名＆記事名追加&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>画像を記事に適用&lt;/li>
+&lt;li>記事からカードを適用&lt;/li>
+&lt;/ul>
+&lt;p>これらの処理には、一部の界隈で嫌われがちなPythonを用いました。（Python3.8）
+Pythonを利用した理由は、&lt;/p>
+&lt;ul>
+&lt;li>画像処理等の実装がライブラリを使って行うので楽&lt;/li>
+&lt;li>Windows,UbuntuなどOS間の互換性が高い&lt;/li>
+&lt;/ul>
+&lt;p>と感じたからです。&lt;/p>
+&lt;details>
+&lt;summary>&lt;a href="https://github.com/HidetoNiwa/HP/blob/master/python/make-card-pic.py">実装したコード&lt;/a>（Python）&lt;/summary>
+&lt;script src="https://gist.github.com/HidetoNiwa/1e0f7220cc8f4ddc4dd90d090d108622.js" data-gist-line="1-20">&lt;/script>
+&lt;/details>
+&lt;h3 id="ベース画像の準備">ベース画像の準備&lt;/h3>
+&lt;p>まずは、カードのベースとなる画像を用意します。今回は下記の画像を用いました。&lt;/p>
+&lt;figure id="figure-ベース画像">
+&lt;a data-fancybox="" href="https://github.com/HidetoNiwa/HP/blob/master/python/card.png?raw=true" data-caption="ベース画像">
+&lt;img src="https://github.com/HidetoNiwa/HP/blob/master/python/card.png?raw=true" alt="" >
+&lt;/a>
+&lt;figcaption>
+ベース画像
+&lt;/figcaption>
+&lt;/figure>
+&lt;h3 id="記事一覧を取得">記事一覧を取得&lt;/h3>
+&lt;p>記事一覧の取得を行うため、/content/以下のディレクトリの取得を行いました。また、記事ではないページのmarkdownの取得を行わないため、別途ignoreリストを作成して、除外しました。&lt;/p>
+&lt;p>また、Python標準ライブラリである、globを用いているのでimportします。&lt;/p>
+&lt;pre>&lt;code class="language-Python">import glob
+ignore_list = {&amp;quot;./content/privacy.md&amp;quot;, &amp;quot;./content/terms.md&amp;quot;,&amp;quot;./content/authors/niwa/_index.md&amp;quot;,&amp;quot;./content/home/about.md&amp;quot;,&amp;quot;./content/home/index.md&amp;quot;,&amp;quot;./content/home/posts.md&amp;quot;,&amp;quot;./content/home/skills.md&amp;quot;,&amp;quot;./content/post/_index.md&amp;quot;,&amp;quot;./content/publication/_index.md&amp;quot;,&amp;quot;./content/talk/_index.md&amp;quot;}
+def get_dir():
+path = './content/**/*.md'
+file_list = glob.glob(path, recursive=True)
+file_list = list(filter(lambda x: x not in ignore_list, file_list))
+return file_list
+&lt;/code>&lt;/pre>
+&lt;h3 id="記事からのタイトル取得">記事からのタイトル取得&lt;/h3>
+&lt;p>記事からタイトルの取得を行うため、前に取得した記事リストから順にファイルオープンを行い記事のタイトルの抽出を行いました。&lt;/p>
+&lt;pre>&lt;code class="language-Python">def get_title(file_path):
+print(&amp;quot;Open file...&amp;quot;, file_path)
+f = open(file_path, 'r', encoding=&amp;quot;utf-8&amp;quot;) # File Open（文字コード指定）
+datalist = f.readlines()
+f.close()
+title_string = &amp;quot;title: &amp;quot;
+for i in range(len(datalist)):
+text = datalist[i]
+title = text.split('&amp;quot;')
+if title[0] == title_string:
+break
+print(title)
+return title[1]
+&lt;/code>&lt;/pre>
+&lt;h3 id="カード画像に文字入れ">カード画像に文字入れ&lt;/h3>
+&lt;p>カード中に文字を入れるため、Pillowと呼ばれるPythonの画像ライブラリを用いました。これは、Pythonのライブラリとなるので、入っていない場合は下記コマンドで入れます。&lt;/p>
+&lt;pre>&lt;code class="language-bash">pip3 install Pillow
+&lt;/code>&lt;/pre>
+&lt;p>このPillowを用いて、画像中に文字を入れています。文字のフォントは
+&lt;a href="https://fonts.google.com/" target="_blank" rel="noopener">Google Fonts&lt;/a>のものを利用させていただきました。&lt;/p>
+&lt;p>今回の関数では、フォント、画像ファイル、文字列、（文字を入れる）x座標、y座標、フォントサイズ、文字色を引数として扱っています。&lt;/p>
+&lt;pre>&lt;code class="language-Python">from PIL import Image, ImageDraw, ImageFont
+def make_image(font_path, img_path, text, x=0.0, y=0.0, font_size=32, font_color=&amp;quot;black&amp;quot;):
+font = ImageFont.truetype(font_path, font_size)
+img = Image.open(img_path)
+img_d = ImageDraw.Draw(img)
+text_size = img_d.textsize(text, font) # テキストサイズの取得
+img_d.text((x-(text_size[0]/2), y-(text_size[1]/2)),
+text, fill=font_color, font=font)
+img.save(img_path)
+&lt;/code>&lt;/pre>
+&lt;h3 id="記事タイトル文字数取得">記事タイトル文字数取得&lt;/h3>
+&lt;p>記事タイトルが長すぎると、Twitterカード上の収まりが悪くなってしまいます。そのことを防ぐため、全角文字7文字以上で、&lt;/p>
+&lt;p>文字サイズが小さくなるようにしました。その際、文字カウントを行ったのが下記コードになります。その際、UnicodedataといったPythonの標準ライブラリを用いてます。&lt;/p>
+&lt;pre>&lt;code class="language-Python">import unicodedata
+def get_east_asian_width_count(text):
+count = 0
+for c in text:
+if unicodedata.east_asian_width(c) in 'FWA':
+count += 2
+else:
+count += 1
+return count
+&lt;/code>&lt;/pre>
+&lt;h3 id="記事にカード画像をリンク">記事にカード画像をリンク&lt;/h3>
+&lt;p>Hugoでは、最初の方に&amp;rdquo;&amp;mdash;&amp;ldquo;で囲まれた部分があります。そこを、Front Matterと呼びます。&lt;/p>
+&lt;p>このFront Matterと呼ばれる部分に、カード画像の保存場所を明記していきます。&lt;/p>
+&lt;p>今回は、&amp;ldquo;card_image:&amp;ldquo;の後ろにカードのディレクトリを追記する形にしています。&lt;/p>
+&lt;p>また、すでに記載されているかどうかの判定も行っています。（2重で記載するの防ぐため）&lt;/p>
+&lt;pre>&lt;code class="language-Python">def add_card_info(file_path,card_path):
+f = open(file_path, 'r', encoding=&amp;quot;utf-8&amp;quot;) # File Open（文字コード指定）
+datalist = f.readlines()
+f.close()
+card_path = card_path[13:]
+img_string = &amp;quot;card_image:&amp;quot;
+section_string = &amp;quot;---&amp;quot;
+start_formatter = False
+img_info = False
+for i in range(len(datalist)):
+text = datalist[i][:11]
+if text == img_string:
+img_info = True
+break
+text = text[:3]
+if text == section_string:
+if start_formatter:
+break
+else:
+start_formatter=True
+card_info = img_string + &amp;quot; &amp;quot; + '&amp;quot;'+card_path+'&amp;quot;\n'
+if img_info:
+datalist[i]=card_info
+else:
+datalist.insert(14,card_info)
+f = open(file_path, 'w', encoding=&amp;quot;utf-8&amp;quot;) # File Open（文字コード指定）
+f.writelines(datalist)
+f.close()
+return text
+&lt;/code>&lt;/pre>
+&lt;h3 id="hugo-themeに適用">Hugo Themeに適用&lt;/h3>
+&lt;p>さて、ここまでで、画像の生成・画像と記事の紐づけができました。最後は、HTMLにこのカードを紐づけましょう。&lt;/p>
+&lt;p>自分が用いているテーマ（academic）では、これらの情報は /layouts/partials/site_head.htmlに記載されていました。&lt;/p>
+&lt;blockquote>
+&lt;p>基本的には&lt;head>タグ内に書けば大丈夫です。&lt;/p>
+&lt;/blockquote>
+&lt;p>実際に、カード画像を指定しているのは下記HTML文になります。つまりは、ここに画像が適用されれば良いです。&lt;/p>
+&lt;pre>&lt;code class="language-HTML">&amp;lt;meta property=&amp;quot;og:image&amp;quot; content=&amp;quot;{{.}}&amp;quot;&amp;gt;
+&amp;lt;meta property=&amp;quot;twitter:image&amp;quot; content=&amp;quot;{{.}}&amp;quot;&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>自分の環境では、$og_imageにうまいこと代入されれば良い感じでした。そこで下記のように編集しました。&lt;/p>
+&lt;p>isset .Params &amp;ldquo;card_image&amp;rdquo;：これは、&amp;ldquo;card_image&amp;quot;が記事中で設定されていますよといった意味になります。&lt;/p>
+&lt;p>そして、.Params.card_imageで記事から保存場所を引っ張ってきています。&lt;/p>
+&lt;pre>&lt;code class="language-GO">{{ else if isset .Params &amp;quot;card_image&amp;quot; }}&amp;lt;!--Twitterカード等に用いられる画像があるかの判定、Front Matter--&amp;gt;
+{{ $og_image = printf &amp;quot;img/%s&amp;quot; .Params.card_image | absURL }}
+&lt;/code>&lt;/pre>
+&lt;h2 id="python動作">Python動作&lt;/h2>
+&lt;p>さて、これでPythonを動作させて画像の生成・記事へファイルのリンクを行えば大丈夫です。Pythonファイルを、/python/make-card-pic.pyに保存しました。&lt;/p>
+&lt;p>このファイルを実行するために、Hugoのトップディレクトリで下記コマンドを実行すれば自動で画像を生成してくれます！&lt;/p>
+&lt;pre>&lt;code class="language-bash">python3 ./python/make-card-pic.py
+&lt;/code>&lt;/pre>
+&lt;h2 id="最後に">最後に&lt;/h2>
+&lt;p>この記事を書いていたら思ったよりも長くなってしまいました。まぁ、これ関連のコード作成も研究等の兼ね合いから、1年くらいしてた気がします。&lt;/p>
+&lt;p>現状、ローカルで画像を生成してコミットする形となってしまっているのが欠点です。また、記事のMarkDownがリネームされると対応できません。&lt;/p>
+&lt;p>Draft（下書き）状態の記事にも画像を生成してしまいます&amp;hellip;これらを踏まえると、下記の機能を実装したいですね。&lt;/p>
+&lt;ul>
+&lt;li>GitHub Actionsで記事がGitHub Pagesに公開されるときに同時にカード画像が生成されるようにする&lt;/li>
+&lt;li>使用されていない画像が無いか確認する&lt;/li>
+&lt;li>Title取得時にDraftかどうかの判定を行う&lt;/li>
+&lt;/ul>
+&lt;p>最後まで読んでくれてありがとうございました！&lt;/p></description></item><item><title>Hugo Academicテーマの導入</title><link>https://www.hahahahaha-nnn.work/post/hugo_academic/</link><pubDate>Fri, 22 May 2020 00:29:36 +0900</pubDate><guid>https://www.hahahahaha-nnn.work/post/hugo_academic/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
 &lt;p>こんにちは！どと～ることにゎ～んです。&lt;/p>
 &lt;p>これまでに、Hugoの環境構築の仕方、投稿の仕方と投稿を出してきました。&lt;/p>
 &lt;ul>
