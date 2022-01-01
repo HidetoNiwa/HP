@@ -12,6 +12,7 @@ lastmod: 2020-09-27T02:38:54+09:00
 featured: false
 draft: false
 
+card_image: "card/post/slack-emoji-move.png"
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.

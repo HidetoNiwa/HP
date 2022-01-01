@@ -12,6 +12,7 @@ lastmod: 2020-05-08T12:15:00+09:00
 featured: false
 draft: false
 
+card_image: "card/post/hugo_in_windows.png"
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
