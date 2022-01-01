@@ -1,4 +1,8 @@
-# HidetoNiwa/HP [![Actions Status](https://github.com/HidetoNiwa/HP/workflows/github%20pages/badge.svg)](https://github.com/HidetoNiwa/HP/actions)
+# HidetoNiwa/HP 
+
+[![Actions Status](https://github.com/HidetoNiwa/HP/workflows/github%20pages/badge.svg)](https://github.com/HidetoNiwa/HP/actions) 
+![GitHub repo size](https://img.shields.io/github/repo-size/HidetoNiwa/HP?style=flat-square)
+![GitHub top language](https://img.shields.io/github/languages/top/HidetoNiwa/HP?style=flat-square)
 
 ## 概要
 
