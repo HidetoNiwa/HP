@@ -1,12 +1,12 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "NHK Robocon"
+title: "NHK学生ロボコン時代"
 subtitle: ""
 summary: ""
-authors: []
-tags: []
-categories: []
+authors: [HidetoNiwa]
+tags: [NHK学生ロボコン,ロボコン,Robohan]
+categories: [NHK学生ロボコン,ロボコン,Robohan]
 date: 2022-01-09T08:58:07Z
 lastmod: 2022-01-09T08:58:07Z
 featured: false
@@ -27,3 +27,15 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+
+## 概要
+
+自身が所属していた、[大阪大学公認 ロボット製作団体Robohan](https://www.robohan.net/)において、NHK学生ロボコンに向けて製作した基板に関する記事。
+
+## 書こうと思っている記事
+
+- [NHK学生ロボコン/2018モータドライバ](./2018md)
+- [NHK学生ロボコン/2019メイン基板](./2019main)
+- [NHK学生ロボコン/参考-回路構成例]
+
+## 公開中の記事
